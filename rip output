@@ -1,0 +1,2799 @@
+
+
+
+2024-04-30T18:24:33: %EASYPY-INFO: Starting job run: rip_job
+2024-04-30T18:24:33: %EASYPY-INFO: Runinfo directory: /home/tcs/.pyats/runinfo/rip_job.2024Apr30_18:24:32.072788
+2024-04-30T18:24:33: %EASYPY-INFO: --------------------------------------------------------------------------------
+2024-04-30T18:24:35: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:24:35: %EASYPY-INFO: |                          Bringup/Clean Information                           |
+2024-04-30T18:24:35: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:24:35: %EASYPY-INFO: {'bringup': {}, 'cleaners': {}, 'devices': {}}
+
+2024-04-30T18:24:35: %ATS-INFO: Checking all devices are up and ready is disabled, '--check-all-devices-up' must be set to True in case of pyats runs or '-check_all_devices_up' set to True in case of legacy easypy runs
+<module 'pyats.easypy.jobs.rip_job' from '/home/tcs/POC/Nexus_router_suites/RIP_PYATS/rip_job.py'>
+2024-04-30T18:24:35: %EASYPY-INFO: Starting task execution: Task-1
+2024-04-30T18:24:35: %EASYPY-INFO:     test harness = pyats.aetest
+2024-04-30T18:24:35: %EASYPY-INFO:     testscript   = /home/tcs/POC/Nexus_router_suites/RIP_PYATS/testcase_rip_all.py
+<module 'pyats.aetest.testscript.testcase_rip_all' from '/home/tcs/POC/Nexus_router_suites/RIP_PYATS/testcase_rip_all.py'>
+2024-04-30T18:24:35: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:24:35: %AETEST-INFO: |                            Starting common setup                             |
+2024-04-30T18:24:35: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:24:35: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:24:35: %AETEST-INFO: |                Starting subsection print_testbed_information                 |
+2024-04-30T18:24:35: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:24:35: %ROOT-INFO: Device name : n9k1 
+2024-04-30T18:24:35: %ROOT-INFO: Interface : Ethernet1/5
+2024-04-30T18:24:35: %ROOT-INFO: Link : uut1_uut3_1
+2024-04-30T18:24:35: %ROOT-INFO: Device name : n9k4 
+2024-04-30T18:24:35: %ROOT-INFO: Interface : Ethernet1/9
+2024-04-30T18:24:35: %ROOT-INFO: Link : uut2_uut3_1
+2024-04-30T18:24:35: %ROOT-INFO: Device name : n9k3 
+2024-04-30T18:24:35: %ROOT-INFO: Interface : Ethernet1/5
+2024-04-30T18:24:35: %ROOT-INFO: Link : uut3_uut1_1
+2024-04-30T18:24:35: %ROOT-INFO: Interface : Ethernet1/9
+2024-04-30T18:24:35: %ROOT-INFO: Link : uut3_uut2_1
+2024-04-30T18:24:35: %SCRIPT-INFO: Device and interfaces used for rip feature
+2024-04-30T18:24:35: %SCRIPT-INFO: {'n9k1': ['Ethernet1/5'], 'n9k4': ['Ethernet1/9'], 'n9k3': ['Ethernet1/5', 'Ethernet1/9']}
+2024-04-30T18:24:35: %AETEST-INFO: The result of subsection print_testbed_information is => PASSED
+2024-04-30T18:24:35: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:24:35: %AETEST-INFO: |                    Starting subsection connect_to_devices                    |
+2024-04-30T18:24:35: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:24:35: %SCRIPT-INFO: Connecting to devices
+
+2024-04-30 18:24:35,621: %UNICON-INFO: +++ n9k1 logfile /home/tcs/.pyats/runinfo/rip_job.2024Apr30_18:24:32.072788/n9k1-cli-1714481675.log +++
+
+2024-04-30 18:24:35,621: %UNICON-INFO: +++ Unicon plugin nxos (unicon.plugins.nxos) +++
+User Access Verification
+
+
+2024-04-30 18:24:35,925: %UNICON-INFO: +++ connection to spawn: ssh -l admin 10.133.35.148 -p 22, id: 139663579274160 +++
+
+2024-04-30 18:24:35,927: %UNICON-INFO: connection to n9k1
+Password: 
+
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+n9k1# 
+
+2024-04-30 18:24:36,452: %UNICON-INFO: +++ initializing handle +++
+
+2024-04-30 18:24:36,636: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'term length 0' +++
+term length 0
+n9k1# 
+
+2024-04-30 18:24:37,009: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'term width 511' +++
+term width 511
+n9k1# 
+
+2024-04-30 18:24:37,341: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'terminal session-timeout 0' +++
+terminal session-timeout 0
+n9k1# 
+
+2024-04-30 18:24:37,487: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# no logging console
+n9k1(config)# line console
+n9k1(config-console)# exec-timeout 0
+n9k1(config-console)# line vty
+n9k1(config-line)# exec-timeout 0
+n9k1(config-line)# terminal width 511
+n9k1(config-line)# end
+n9k1# 
+2024-04-30T18:24:38: %ROOT-INFO: Successfully connected to device n9k1
+
+2024-04-30 18:24:38,896: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show version' +++
+show version
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+
+Software
+  BIOS: version 07.17
+ NXOS: version 9.3(13)
+  BIOS compile time:  09/10/2014
+  NXOS image file is: bootflash:///nxos.9.3.13.bin
+  NXOS compile time:  1/31/2024 12:00:00 [12/13/2023 06:06:50]
+
+
+Hardware
+  cisco Nexus9000 C9396PX Chassis 
+  Intel(R) Core(TM) i3-3227U CPU @ 2.50GHz with 16399572 kB of memory.
+  Processor Board ID SAL1927J6P3
+
+  Device name: n9k1
+  bootflash:   21693714 kB
+Kernel uptime is 7 day(s), 5 hour(s), 58 minute(s), 44 second(s)
+
+Last reset at 500503 usecs after Tue Apr 23 05:36:10 2024
+  Reason: Reset Requested by CLI command reload
+  System version: 9.3(13)
+  Service: 
+
+plugin
+  Core Plugin, Ethernet Plugin
+
+Active Package(s):
+        
+n9k1# 
+2024-04-30T18:24:40: %ROOT-INFO: Software version : 9.3(13)
+2024-04-30T18:24:40: %ROOT-INFO: Image File :bootflash:///nxos.9.3.13.bin
+
+2024-04-30 18:24:40,028: %UNICON-INFO: +++ n9k3 logfile /home/tcs/.pyats/runinfo/rip_job.2024Apr30_18:24:32.072788/n9k3-cli-1714481680.log +++
+
+2024-04-30 18:24:40,028: %UNICON-INFO: +++ Unicon plugin nxos (unicon.plugins.nxos) +++
+User Access Verification
+
+
+2024-04-30 18:24:40,328: %UNICON-INFO: +++ connection to spawn: ssh -l admin 10.133.35.152 -p 22, id: 139663579466480 +++
+
+2024-04-30 18:24:40,329: %UNICON-INFO: connection to n9k3
+Password: 
+
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+n9k3# 
+
+2024-04-30 18:24:40,843: %UNICON-INFO: +++ initializing handle +++
+
+2024-04-30 18:24:41,016: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'term length 0' +++
+term length 0
+n9k3# 
+
+2024-04-30 18:24:41,331: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'term width 511' +++
+term width 511
+n9k3# 
+
+2024-04-30 18:24:41,630: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'terminal session-timeout 0' +++
+terminal session-timeout 0
+n9k3# 
+
+2024-04-30 18:24:41,776: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# no logging console
+n9k3(config)# line console
+n9k3(config-console)# exec-timeout 0
+n9k3(config-console)# line vty
+n9k3(config-line)# exec-timeout 0
+n9k3(config-line)# terminal width 511
+n9k3(config-line)# end
+n9k3# 
+2024-04-30T18:24:42: %ROOT-INFO: Successfully connected to device n9k3
+
+2024-04-30 18:24:43,152: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'show version' +++
+show version
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+
+Software
+  BIOS: version 07.17
+ NXOS: version 9.3(13)
+  BIOS compile time:  09/10/2014
+  NXOS image file is: bootflash:///nxos.9.3.13.bin
+  NXOS compile time:  1/31/2024 12:00:00 [12/13/2023 06:06:50]
+
+
+Hardware
+  cisco Nexus9000 C9396PX Chassis 
+  Intel(R) Core(TM) i3-3227U CPU @ 2.50GHz with 16399572 kB of memory.
+  Processor Board ID SAL1911B602
+
+  Device name: n9k3
+  bootflash:    7906304 kB
+Kernel uptime is 7 day(s), 5 hour(s), 53 minute(s), 17 second(s)
+
+Last reset at 660276 usecs after Tue Apr 23 05:24:12 2024
+  Reason: Reset Requested by CLI command reload
+  System version: 9.3(13)
+  Service: 
+
+plugin
+  Core Plugin, Ethernet Plugin
+
+Active Package(s):
+        
+n9k3# 
+2024-04-30T18:24:44: %ROOT-INFO: Software version : 9.3(13)
+2024-04-30T18:24:44: %ROOT-INFO: Image File :bootflash:///nxos.9.3.13.bin
+
+2024-04-30 18:24:44,543: %UNICON-INFO: +++ n9k4 logfile /home/tcs/.pyats/runinfo/rip_job.2024Apr30_18:24:32.072788/n9k4-cli-1714481684.log +++
+
+2024-04-30 18:24:44,544: %UNICON-INFO: +++ Unicon plugin nxos (unicon.plugins.nxos) +++
+User Access Verification
+Password: 
+
+2024-04-30 18:24:44,856: %UNICON-INFO: +++ connection to spawn: ssh -l admin 10.133.35.143 -p 22, id: 139663579081504 +++
+
+2024-04-30 18:24:44,857: %UNICON-INFO: connection to n9k4
+
+
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+n9k4# 
+
+2024-04-30 18:24:45,391: %UNICON-INFO: +++ initializing handle +++
+
+2024-04-30 18:24:45,579: %UNICON-INFO: +++ n9k4 with via 'cli': executing command 'term length 0' +++
+term length 0
+n9k4# 
+
+2024-04-30 18:24:45,912: %UNICON-INFO: +++ n9k4 with via 'cli': executing command 'term width 511' +++
+term width 511
+n9k4# 
+
+2024-04-30 18:24:46,253: %UNICON-INFO: +++ n9k4 with via 'cli': executing command 'terminal session-timeout 0' +++
+terminal session-timeout 0
+n9k4# 
+
+2024-04-30 18:24:46,399: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# no logging console
+n9k4(config)# line console
+n9k4(config-console)# exec-timeout 0
+n9k4(config-console)# line vty
+n9k4(config-line)# exec-timeout 0
+n9k4(config-line)# terminal width 511
+n9k4(config-line)# end
+n9k4# 
+2024-04-30T18:24:47: %ROOT-INFO: Successfully connected to device n9k4
+
+2024-04-30 18:24:47,733: %UNICON-INFO: +++ n9k4 with via 'cli': executing command 'show version' +++
+show version
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+
+Software
+  BIOS: version 07.17
+ NXOS: version 9.3(13)
+  BIOS compile time:  09/10/2014
+  NXOS image file is: bootflash:///nxos.9.3.13.bin
+  NXOS compile time:  1/31/2024 12:00:00 [12/13/2023 06:06:50]
+
+
+Hardware
+  cisco Nexus9000 C9396PX Chassis 
+  Intel(R) Core(TM) i3-3227U CPU @ 2.50GHz with 16399572 kB of memory.
+  Processor Board ID SAL18411YGQ
+
+  Device name: n9k4
+  bootflash:    7906304 kB
+Kernel uptime is 7 day(s), 6 hour(s), 29 minute(s), 53 second(s)
+
+Last reset at 620625 usecs after Tue Apr 23 04:45:00 2024
+  Reason: Reset Requested by CLI command reload
+  System version: 9.3(13)
+  Service: 
+
+plugin
+  Core Plugin, Ethernet Plugin
+
+Active Package(s):
+        
+n9k4# 
+2024-04-30T18:24:48: %ROOT-INFO: Software version : 9.3(13)
+2024-04-30T18:24:48: %ROOT-INFO: Image File :bootflash:///nxos.9.3.13.bin
+2024-04-30T18:24:48: %AETEST-INFO: The result of subsection connect_to_devices is => PASSED
+2024-04-30T18:24:48: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:24:48: %AETEST-INFO: |            Starting subsection configure_ip_address_to_interfaces            |
+2024-04-30T18:24:48: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:24:48: %SCRIPT-INFO: Assign ip address to interfaces
+2024-04-30T18:24:48: %SCRIPT-INFO: dict_keys(['n9k1', 'n9k4', 'n9k3'])
+
+2024-04-30 18:24:48,846: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/5
+n9k1(config-if)#  no switchport
+n9k1(config-if)# ip address 10.10.10.1 255.255.255.0
+n9k1(config-if)#  no shut
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 18:24:52,525: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/11
+n9k1(config-if)#  no switchport
+n9k1(config-if)# ip address 12.12.12.1 255.255.255.0
+n9k1(config-if)#  no shut
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 18:24:56,115: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/5
+n9k3(config-if)#  no switchport
+n9k3(config-if)# ip address 10.10.10.2 255.255.255.0
+n9k3(config-if)#  no shut
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 18:24:59,837: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/9
+n9k3(config-if)#  no switchport
+n9k3(config-if)# ip address 11.11.11.1 255.255.255.0
+n9k3(config-if)#  no shut
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 18:25:03,618: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/9
+n9k4(config-if)#  no switchport
+n9k4(config-if)# ip address 11.11.11.2 255.255.255.0
+n9k4(config-if)#  no shut
+n9k4(config-if)#  end
+n9k4# 
+
+2024-04-30 18:25:07,352: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/11
+n9k4(config-if)#  no switchport
+n9k4(config-if)# ip address 12.12.12.2 255.255.255.0
+n9k4(config-if)#  no shut
+n9k4(config-if)#  end
+n9k4# 
+2024-04-30T18:25:11: %AETEST-INFO: The result of subsection configure_ip_address_to_interfaces is => PASSED
+2024-04-30T18:25:11: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:25:11: %AETEST-INFO: |                 Starting subsection enabling_rip_on_devices                  |
+2024-04-30T18:25:11: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:25:11: %SCRIPT-INFO: Enabling rip on devices
+
+2024-04-30 18:25:11,092: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# feature rip
+n9k1(config)#  end
+n9k1# 
+
+2024-04-30 18:25:14,622: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# feature rip
+n9k3(config)#  end
+n9k3# 
+
+2024-04-30 18:25:18,109: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# feature rip
+n9k4(config)#  end
+n9k4# 
+2024-04-30T18:25:21: %AETEST-INFO: The result of subsection enabling_rip_on_devices is => PASSED
+2024-04-30T18:25:21: %AETEST-INFO: The result of common setup is => PASSED
+2024-04-30T18:25:21: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:25:21: %AETEST-INFO: |                     Starting testcase Basic_Rip_testcase                     |
+2024-04-30T18:25:21: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:25:21: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:25:21: %AETEST-INFO: |                    Starting section configure_rip_routers                    |
+2024-04-30T18:25:21: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:25:21: %SCRIPT-INFO: Configure rip on routers
+
+2024-04-30 18:25:21,641: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# router rip 2
+n9k1(config-router)#  version 2
+n9k1(config)#  end
+n9k1# 
+
+2024-04-30 18:25:26,460: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# router rip 2
+n9k3(config-router)#  version 2
+n9k3(config)#  end
+n9k3# 
+
+2024-04-30 18:25:31,005: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# router rip 2
+n9k4(config-router)#  version 2
+n9k4(config)#  end
+n9k4# 
+2024-04-30T18:25:35: %SCRIPT-INFO: Configure rip in interface
+
+2024-04-30 18:25:35,744: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/5
+n9k1(config-if)#  ip router rip 2
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 18:25:39,297: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/11
+n9k1(config-if)#  ip router rip 2
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 18:25:42,823: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/5
+n9k3(config-if)#  ip router rip 2
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 18:25:46,376: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/9
+n9k3(config-if)#  ip router rip 2
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 18:25:49,943: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/9
+n9k4(config-if)#  ip router rip 2
+n9k4(config-if)#  end
+n9k4# 
+
+2024-04-30 18:25:53,490: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/11
+n9k4(config-if)#  ip router rip 2
+n9k4(config-if)#  end
+n9k4# 
+2024-04-30T18:25:57: %AETEST-INFO: The result of section configure_rip_routers is => PASSED
+2024-04-30T18:25:57: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:25:57: %AETEST-INFO: |                 Starting section check_ping_after_rip_config                 |
+2024-04-30T18:25:57: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:25:57: %SCRIPT-INFO: Check rip configured or not 
+
+2024-04-30 18:25:57,288: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'show ip rip neighbor' +++
+show ip rip neighbor
+Process Name "rip-2" VRF "default"
+RIP Neighbor Information (number of neighbors = 2)
+('dead' means more than 300 seconds ago)
+
+10.10.10.1, Ethernet1/5
+    Last Response sent/received: 00:00:07/00:00:12
+    Last Request  sent/received: 00:00:14/never
+    Bad Pkts Received: 0
+    Bad Routes Received: 0
+11.11.11.2, Ethernet1/9
+    Last Response sent/received: 00:00:10/00:00:02
+    Last Request  sent/received: 00:00:10/00:00:07
+    Bad Pkts Received: 0
+    Bad Routes Received: 0
+n9k3# 
+2024-04-30T18:25:57: %SCRIPT-INFO: Process Name "rip-2" VRF "default"
+2024-04-30T18:25:57: %SCRIPT-INFO: RIP Neighbor Information (number of neighbors = 2)
+2024-04-30T18:25:57: %SCRIPT-INFO: ('dead' means more than 300 seconds ago)
+2024-04-30T18:25:57: %SCRIPT-INFO: 
+2024-04-30T18:25:57: %SCRIPT-INFO: 10.10.10.1, Ethernet1/5
+2024-04-30T18:25:57: %SCRIPT-INFO:     Last Response sent/received: 00:00:07/00:00:12
+2024-04-30T18:25:57: %SCRIPT-INFO:     Last Request  sent/received: 00:00:14/never
+2024-04-30T18:25:57: %SCRIPT-INFO:     Bad Pkts Received: 0
+2024-04-30T18:25:57: %SCRIPT-INFO:     Bad Routes Received: 0
+2024-04-30T18:25:57: %SCRIPT-INFO: 11.11.11.2, Ethernet1/9
+2024-04-30T18:25:57: %SCRIPT-INFO:     Last Response sent/received: 00:00:10/00:00:02
+2024-04-30T18:25:57: %SCRIPT-INFO:     Last Request  sent/received: 00:00:10/00:00:07
+2024-04-30T18:25:57: %SCRIPT-INFO:     Bad Pkts Received: 0
+2024-04-30T18:25:57: %SCRIPT-INFO:     Bad Routes Received: 0
+2024-04-30T18:25:57: %SCRIPT-INFO: RIP configured on device
+2024-04-30T18:25:57: %SCRIPT-INFO: Ping the ip configured on device2: n9k4
+
+2024-04-30 18:25:57,672: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=1.036 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.763 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=1.035 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=1.187 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=1.512 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.763/1.106/1.512 ms
+n9k3# 
+
+2024-04-30 18:25:58,061: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.928 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.595 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.525 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.561 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.644 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.525/0.65/0.928 ms
+n9k3# 
+
+2024-04-30 18:25:58,393: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.903 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.697 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.584 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.565 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.623 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.565/0.674/0.903 ms
+n9k3# 
+
+2024-04-30 18:25:58,735: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=1.01 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=1.019 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.756 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=1.154 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.67 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.67/0.921/1.154 ms
+n9k3# 
+
+2024-04-30 18:25:59,100: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.89 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.629 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.624 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=3.238 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=5.611 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.624/2.198/5.611 ms
+n9k3# 
+2024-04-30T18:25:59: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T18:25:59: %SCRIPT-INFO: {'sent_pkt': '5', 'receive_pkt': '5', 'pkt_loss': '0.00%'}
+2024-04-30T18:25:59: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T18:25:59: %SCRIPT-INFO: Sent : 5 packets and received: 5 packets and packet loss: 0.00%
+2024-04-30T18:25:59: %AETEST-INFO: Passed reason: Success: After applied for Rip, ping got successful
+2024-04-30T18:25:59: %AETEST-INFO: The result of section check_ping_after_rip_config is => PASSED
+2024-04-30T18:25:59: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:25:59: %AETEST-INFO: |                  Starting section unconfigure_rip_on_device                  |
+2024-04-30T18:25:59: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:25:59: %SCRIPT-INFO: Unconfigure rip in interface
+
+2024-04-30 18:25:59,287: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/5
+n9k1(config-if)#  no ip router rip 2
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 18:26:02,865: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/5
+n9k3(config-if)#  no ip router rip 2
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 18:26:06,354: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/9
+n9k3(config-if)#  no ip router rip 2
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 18:26:09,843: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/9
+n9k4(config-if)#  no ip router rip 2
+n9k4(config-if)#  end
+n9k4# 
+2024-04-30T18:26:13: %SCRIPT-INFO: Unconfigure rip on routers
+
+2024-04-30 18:26:13,402: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# no router rip 2
+n9k1(config)#  end
+n9k1# 
+
+2024-04-30 18:26:17,278: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# no router rip 2
+n9k3(config)#  end
+n9k3# 
+
+2024-04-30 18:26:21,109: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# no router rip 2
+n9k4(config)#  end
+n9k4# 
+2024-04-30T18:26:25: %AETEST-INFO: The result of section unconfigure_rip_on_device is => PASSED
+2024-04-30T18:26:25: %AETEST-INFO: The result of testcase Basic_Rip_testcase is => PASSED
+2024-04-30T18:26:25: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:26:25: %AETEST-INFO: |                     Starting testcase Rip_metric_offset                      |
+2024-04-30T18:26:25: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:26:25: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:26:25: %AETEST-INFO: |                   Starting section configure_rip_on_device                   |
+2024-04-30T18:26:25: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:26:25: %SCRIPT-INFO: Configure rip on routers
+
+2024-04-30 18:26:25,122: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# router rip 2
+n9k1(config-router)#  version 2
+n9k1(config)#  end
+n9k1# 
+
+2024-04-30 18:26:29,420: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# router rip 2
+n9k3(config-router)#  version 2
+n9k3(config)#  end
+n9k3# 
+
+2024-04-30 18:26:33,973: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# router rip 2
+n9k4(config-router)#  version 2
+n9k4(config)#  end
+n9k4# 
+2024-04-30T18:26:38: %SCRIPT-INFO: Configure rip in interface
+
+2024-04-30 18:26:38,726: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/5
+n9k1(config-if)#  ip router rip 2
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 18:26:42,298: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/11
+n9k1(config-if)#  ip router rip 2
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 18:26:45,860: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/5
+n9k3(config-if)#  ip router rip 2
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 18:26:49,443: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/9
+n9k3(config-if)#  ip router rip 2
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 18:26:52,988: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/9
+n9k4(config-if)#  ip router rip 2
+n9k4(config-if)#  end
+n9k4# 
+
+2024-04-30 18:26:56,531: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/11
+n9k4(config-if)#  ip router rip 2
+n9k4(config-if)#  end
+n9k4# 
+2024-04-30T18:27:00: %SCRIPT-INFO: Configure rip metric-offset in interface
+
+2024-04-30 18:27:00,071: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/11
+n9k1(config-if)#   ip rip metric-offset 3
+n9k1(config-if)# end
+n9k1# 
+
+2024-04-30 18:27:00,577: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/11
+n9k4(config-if)#   ip rip metric-offset 3
+n9k4(config-if)# end
+n9k4# 
+2024-04-30T18:27:01: %AETEST-INFO: The result of section configure_rip_on_device is => PASSED
+2024-04-30T18:27:01: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:01: %AETEST-INFO: |             Starting section check_ping_after_rip_metric_offset              |
+2024-04-30T18:27:01: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:01: %SCRIPT-INFO: Check rip metric-offset configured or not 
+
+2024-04-30 18:27:01,270: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show ip rip interface ethernet 1/11' +++
+show ip rip interface ethernet 1/11
+Process Name "rip-2" VRF "default"
+RIP-configured interface information
+
+Ethernet1/11, protocol-up/link-up/admin-up, RIP state : up
+  address/mask 12.12.12.1/24, metric 3, split-horizon
+
+n9k1# 
+2024-04-30T18:27:01: %SCRIPT-INFO: Process Name "rip-2" VRF "default"
+2024-04-30T18:27:01: %SCRIPT-INFO: RIP-configured interface information
+2024-04-30T18:27:01: %SCRIPT-INFO: 
+2024-04-30T18:27:01: %SCRIPT-INFO: Ethernet1/11, protocol-up/link-up/admin-up, RIP state : up
+2024-04-30T18:27:01: %SCRIPT-INFO:   address/mask 12.12.12.1/24, metric 3, split-horizon
+2024-04-30T18:27:01: %SCRIPT-INFO: Rip metric offset configured on device sucessfully
+2024-04-30T18:27:01: %SCRIPT-INFO: Ping the ip configured on device2: n9k4
+
+2024-04-30 18:27:01,635: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+Request 0 timed out
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=253 time=1.01 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=253 time=0.632 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=253 time=0.59 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=253 time=0.685 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 4 packets received, 20.00% packet loss
+round-trip min/avg/max = 0.59/0.729/1.01 ms
+n9k1# 
+
+2024-04-30 18:27:03,986: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=253 time=1.212 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=253 time=0.978 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=253 time=0.659 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=253 time=0.748 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=253 time=0.821 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.659/0.883/1.212 ms
+n9k1# 
+
+2024-04-30 18:27:04,352: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=253 time=0.929 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=253 time=0.646 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=253 time=0.614 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=253 time=0.635 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=253 time=0.626 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.614/0.689/0.929 ms
+n9k1# 
+2024-04-30T18:27:04: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T18:27:04: %SCRIPT-INFO: {'sent_pkt': '5', 'receive_pkt': '5', 'pkt_loss': '0.00%'}
+2024-04-30T18:27:04: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T18:27:04: %SCRIPT-INFO: Sent : 5 packets and received: 5 packets and packet loss: 0.00%
+2024-04-30T18:27:04: %AETEST-INFO: Passed reason: Success: After applied rip metric offset ping got successful
+2024-04-30T18:27:04: %AETEST-INFO: The result of section check_ping_after_rip_metric_offset is => PASSED
+2024-04-30T18:27:04: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:04: %AETEST-INFO: |           Starting section unconfigure_rip_metric_offset_on_device           |
+2024-04-30T18:27:04: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:04: %SCRIPT-INFO: Unconfigure rip metric offset in interface
+
+2024-04-30 18:27:04,517: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/11
+n9k1(config-if)#   no ip rip metric-offset 3
+n9k1(config-if)# end
+n9k1# 
+
+2024-04-30 18:27:05,067: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/11
+n9k4(config-if)#   no ip rip metric-offset 3
+n9k4(config-if)# end
+n9k4# 
+2024-04-30T18:27:05: %AETEST-INFO: The result of section unconfigure_rip_metric_offset_on_device is => PASSED
+2024-04-30T18:27:05: %AETEST-INFO: The result of testcase Rip_metric_offset is => PASSED
+2024-04-30T18:27:05: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:05: %AETEST-INFO: |                   Starting testcase Rip_Passive_Interface                    |
+2024-04-30T18:27:05: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:05: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:05: %AETEST-INFO: |                   Starting section configure_acl_on_device                   |
+2024-04-30T18:27:05: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:05: %SCRIPT-INFO: Configure rip  passive interface
+
+2024-04-30 18:27:05,625: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/11
+n9k1(config-if)#   ip rip passive-interface
+n9k1(config-if)#  no shutdown
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 18:27:09,353: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/11
+n9k4(config-if)#   ip rip passive-interface
+n9k4(config-if)#  no shutdown
+n9k4(config-if)#  end
+n9k4# 
+2024-04-30T18:27:12: %AETEST-INFO: The result of section configure_acl_on_device is => PASSED
+2024-04-30T18:27:12: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:12: %AETEST-INFO: |           Starting section Verify_ping_after_rip_passive_interface           |
+2024-04-30T18:27:12: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:12: %SCRIPT-INFO: Check passive interface configured or not 
+
+2024-04-30 18:27:13,186: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show ip rip interface eth1/11' +++
+show ip rip interface eth1/11
+Process Name "rip-2" VRF "default"
+RIP-configured interface information
+
+Ethernet1/11, protocol-up/link-up/admin-up, RIP state : up
+  address/mask 12.12.12.1/24, metric 1, split-horizon, passive (no outbound updates)
+
+n9k1# 
+2024-04-30T18:27:13: %SCRIPT-INFO: Process Name "rip-2" VRF "default"
+2024-04-30T18:27:13: %SCRIPT-INFO: RIP-configured interface information
+2024-04-30T18:27:13: %SCRIPT-INFO: 
+2024-04-30T18:27:13: %SCRIPT-INFO: Ethernet1/11, protocol-up/link-up/admin-up, RIP state : up
+2024-04-30T18:27:13: %SCRIPT-INFO:   address/mask 12.12.12.1/24, metric 1, split-horizon, passive (no outbound updates)
+2024-04-30T18:27:13: %SCRIPT-INFO: Passive interface configured on device
+2024-04-30T18:27:13: %SCRIPT-INFO: Check Rip neighbor after configuring passive interface 
+
+2024-04-30 18:27:13,544: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show ip rip neighbor' +++
+show ip rip neighbor
+Process Name "rip-2" VRF "default"
+RIP Neighbor Information (number of neighbors = 2)
+('dead' means more than 300 seconds ago)
+
+10.10.10.2, Ethernet1/5
+    Last Response sent/received: 00:00:05/0.471198
+    Last Request  sent/received: 00:00:34/00:00:27
+    Bad Pkts Received: 0
+    Bad Routes Received: 0
+12.12.12.2, Ethernet1/11
+    Last Response sent/received: 00:00:19/00:00:09
+    Last Request  sent/received: 00:00:09/00:00:08
+    Bad Pkts Received: 0
+    Bad Routes Received: 0
+n9k1# 
+2024-04-30T18:27:13: %SCRIPT-INFO: Process Name "rip-2" VRF "default"
+2024-04-30T18:27:13: %SCRIPT-INFO: RIP Neighbor Information (number of neighbors = 2)
+2024-04-30T18:27:13: %SCRIPT-INFO: ('dead' means more than 300 seconds ago)
+2024-04-30T18:27:13: %SCRIPT-INFO: 
+2024-04-30T18:27:13: %SCRIPT-INFO: 10.10.10.2, Ethernet1/5
+2024-04-30T18:27:13: %SCRIPT-INFO:     Last Response sent/received: 00:00:05/0.471198
+2024-04-30T18:27:13: %SCRIPT-INFO:     Last Request  sent/received: 00:00:34/00:00:27
+2024-04-30T18:27:13: %SCRIPT-INFO:     Bad Pkts Received: 0
+2024-04-30T18:27:13: %SCRIPT-INFO:     Bad Routes Received: 0
+2024-04-30T18:27:13: %SCRIPT-INFO: 12.12.12.2, Ethernet1/11
+2024-04-30T18:27:13: %SCRIPT-INFO:     Last Response sent/received: 00:00:19/00:00:09
+2024-04-30T18:27:13: %SCRIPT-INFO:     Last Request  sent/received: 00:00:09/00:00:08
+2024-04-30T18:27:13: %SCRIPT-INFO:     Bad Pkts Received: 0
+2024-04-30T18:27:13: %SCRIPT-INFO:     Bad Routes Received: 0
+2024-04-30T18:27:13: %SCRIPT-INFO: Rip neighbor verification successful
+2024-04-30T18:27:13: %SCRIPT-INFO: Ping the ip configured on device3 and device1: n9k1 n9k4
+
+2024-04-30 18:27:13,892: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.978 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.649 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.675 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.68 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.576 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.576/0.711/0.978 ms
+n9k1# 
+
+2024-04-30 18:27:14,225: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.988 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.768 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.721 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.756 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.635 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.635/0.773/0.988 ms
+n9k1# 
+
+2024-04-30 18:27:14,558: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.941 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.778 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.757 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.642 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=3.26 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.642/1.275/3.26 ms
+n9k1# 
+
+2024-04-30 18:27:14,915: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=1.055 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.84 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.871 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.921 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.589 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.589/0.855/1.055 ms
+n9k1# 
+
+2024-04-30 18:27:15,256: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.989 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.597 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.52 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.623 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.492 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.492/0.644/0.989 ms
+n9k1# 
+2024-04-30T18:27:15: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T18:27:15: %SCRIPT-INFO: {'sent_pkt': '5', 'receive_pkt': '5', 'pkt_loss': '0.00%'}
+2024-04-30T18:27:15: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T18:27:15: %SCRIPT-INFO: Sent : 5 packets and received: 5 packets and packet loss: 0.00%
+2024-04-30T18:27:15: %AETEST-INFO: Passed reason: Success: After passive interface ping got successful
+2024-04-30T18:27:15: %AETEST-INFO: The result of section Verify_ping_after_rip_passive_interface is => PASSED
+2024-04-30T18:27:15: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:15: %AETEST-INFO: |              Starting section unconfigure_rip_passive_interface              |
+2024-04-30T18:27:15: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:15: %SCRIPT-INFO: Unconfigure Rip passive interface
+
+2024-04-30 18:27:15,415: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/11
+n9k1(config-if)#   no ip rip passive-interface
+n9k1(config-if)# end
+n9k1# 
+
+2024-04-30 18:27:15,904: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/11
+n9k4(config-if)#   no ip rip passive-interface
+n9k4(config-if)# end
+n9k4# 
+2024-04-30T18:27:16: %AETEST-INFO: The result of section unconfigure_rip_passive_interface is => PASSED
+2024-04-30T18:27:16: %AETEST-INFO: The result of testcase Rip_Passive_Interface is => PASSED
+2024-04-30T18:27:16: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:16: %AETEST-INFO: |                         Starting testcase Rip_timers                         |
+2024-04-30T18:27:16: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:16: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:16: %AETEST-INFO: |                   Starting section configuring_rip_timers                    |
+2024-04-30T18:27:16: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:16: %SCRIPT-INFO: Configure Rip timers on routers
+
+2024-04-30 18:27:16,389: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# router rip 2
+n9k1(config-router)#  address-family ipv4 unicast
+n9k1(config-router-af)#  timers basic 10 60 60 40
+n9k1(config-router-af)#  end
+n9k1# 
+
+2024-04-30 18:27:19,994: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# router rip 2
+n9k4(config-router)#  address-family ipv4 unicast
+n9k4(config-router-af)#  timers basic 10 60 60 40
+n9k4(config-router-af)#  end
+n9k4# 
+2024-04-30T18:27:23: %AETEST-INFO: The result of section configuring_rip_timers is => PASSED
+2024-04-30T18:27:23: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:23: %AETEST-INFO: |                    Starting section check_ping_rip_timers                    |
+2024-04-30T18:27:23: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:23: %SCRIPT-INFO: Check Rip Timers configured or not 
+
+2024-04-30 18:27:23,786: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show ip rip' +++
+show ip rip
+RIP Isolate Mode: No
+MMODE: Initialized
+Process Name "rip-2" VRF "default"
+RIP port 520, multicast-group 224.0.0.9
+Admin-distance: 120 
+Updates every 10 sec, expire in 60 sec
+Collect garbage in 40 sec
+Default-metric: 1
+Max-paths: 16
+Process is up and running
+  Interfaces supported by ipv4 RIP :
+    Ethernet1/5
+    Ethernet1/11
+n9k1# 
+2024-04-30T18:27:23: %SCRIPT-INFO: RIP Isolate Mode: No
+2024-04-30T18:27:23: %SCRIPT-INFO: MMODE: Initialized
+2024-04-30T18:27:23: %SCRIPT-INFO: Process Name "rip-2" VRF "default"
+2024-04-30T18:27:23: %SCRIPT-INFO: RIP port 520, multicast-group 224.0.0.9
+2024-04-30T18:27:23: %SCRIPT-INFO: Admin-distance: 120 
+2024-04-30T18:27:23: %SCRIPT-INFO: Updates every 10 sec, expire in 60 sec
+2024-04-30T18:27:23: %SCRIPT-INFO: Collect garbage in 40 sec
+2024-04-30T18:27:23: %SCRIPT-INFO: Default-metric: 1
+2024-04-30T18:27:23: %SCRIPT-INFO: Max-paths: 16
+2024-04-30T18:27:23: %SCRIPT-INFO: Process is up and running
+2024-04-30T18:27:23: %SCRIPT-INFO:   Interfaces supported by ipv4 RIP :
+2024-04-30T18:27:23: %SCRIPT-INFO:     Ethernet1/5
+2024-04-30T18:27:23: %SCRIPT-INFO:     Ethernet1/11
+2024-04-30T18:27:23: %SCRIPT-INFO: Rip timers configured on device
+2024-04-30T18:27:23: %SCRIPT-INFO: Check Rip Timers configured or not 
+
+2024-04-30 18:27:24,185: %UNICON-INFO: +++ n9k4 with via 'cli': executing command 'show ip rip' +++
+show ip rip
+RIP Isolate Mode: No
+MMODE: Initialized
+Process Name "rip-2" VRF "default"
+RIP port 520, multicast-group 224.0.0.9
+Admin-distance: 120 
+Updates every 10 sec, expire in 60 sec
+Collect garbage in 40 sec
+Default-metric: 1
+Max-paths: 16
+Process is up and running
+  Interfaces supported by ipv4 RIP :
+    Ethernet1/9
+    Ethernet1/11
+n9k4# 
+2024-04-30T18:27:24: %SCRIPT-INFO: RIP Isolate Mode: No
+2024-04-30T18:27:24: %SCRIPT-INFO: MMODE: Initialized
+2024-04-30T18:27:24: %SCRIPT-INFO: Process Name "rip-2" VRF "default"
+2024-04-30T18:27:24: %SCRIPT-INFO: RIP port 520, multicast-group 224.0.0.9
+2024-04-30T18:27:24: %SCRIPT-INFO: Admin-distance: 120 
+2024-04-30T18:27:24: %SCRIPT-INFO: Updates every 10 sec, expire in 60 sec
+2024-04-30T18:27:24: %SCRIPT-INFO: Collect garbage in 40 sec
+2024-04-30T18:27:24: %SCRIPT-INFO: Default-metric: 1
+2024-04-30T18:27:24: %SCRIPT-INFO: Max-paths: 16
+2024-04-30T18:27:24: %SCRIPT-INFO: Process is up and running
+2024-04-30T18:27:24: %SCRIPT-INFO:   Interfaces supported by ipv4 RIP :
+2024-04-30T18:27:24: %SCRIPT-INFO:     Ethernet1/9
+2024-04-30T18:27:24: %SCRIPT-INFO:     Ethernet1/11
+2024-04-30T18:27:24: %SCRIPT-INFO: Rip timers configured on device
+2024-04-30T18:27:24: %SCRIPT-INFO: Verifying Rip neighborship after configuring timers
+
+2024-04-30 18:27:24,617: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show ip rip neighbor' +++
+show ip rip neighbor
+Process Name "rip-2" VRF "default"
+RIP Neighbor Information (number of neighbors = 2)
+('dead' means more than 100 seconds ago)
+
+10.10.10.2, Ethernet1/5
+    Last Response sent/received: 00:00:16/00:00:11
+    Last Request  sent/received: 00:00:45/00:00:38
+    Bad Pkts Received: 0
+    Bad Routes Received: 0
+12.12.12.2, Ethernet1/11
+    Last Response sent/received: 00:00:09/00:00:08
+    Last Request  sent/received: 00:00:20/00:00:19
+    Bad Pkts Received: 0
+    Bad Routes Received: 0
+n9k1# 
+2024-04-30T18:27:24: %SCRIPT-INFO: Process Name "rip-2" VRF "default"
+2024-04-30T18:27:24: %SCRIPT-INFO: RIP Neighbor Information (number of neighbors = 2)
+2024-04-30T18:27:24: %SCRIPT-INFO: ('dead' means more than 100 seconds ago)
+2024-04-30T18:27:24: %SCRIPT-INFO: 
+2024-04-30T18:27:24: %SCRIPT-INFO: 10.10.10.2, Ethernet1/5
+2024-04-30T18:27:24: %SCRIPT-INFO:     Last Response sent/received: 00:00:16/00:00:11
+2024-04-30T18:27:24: %SCRIPT-INFO:     Last Request  sent/received: 00:00:45/00:00:38
+2024-04-30T18:27:24: %SCRIPT-INFO:     Bad Pkts Received: 0
+2024-04-30T18:27:24: %SCRIPT-INFO:     Bad Routes Received: 0
+2024-04-30T18:27:24: %SCRIPT-INFO: 12.12.12.2, Ethernet1/11
+2024-04-30T18:27:24: %SCRIPT-INFO:     Last Response sent/received: 00:00:09/00:00:08
+2024-04-30T18:27:24: %SCRIPT-INFO:     Last Request  sent/received: 00:00:20/00:00:19
+2024-04-30T18:27:24: %SCRIPT-INFO:     Bad Pkts Received: 0
+2024-04-30T18:27:24: %SCRIPT-INFO:     Bad Routes Received: 0
+2024-04-30T18:27:24: %SCRIPT-INFO: Rip neighborship successful
+2024-04-30T18:27:24: %SCRIPT-INFO: Ping the ip configured on device2: n9k4 to check in bound
+
+2024-04-30 18:27:25,041: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.899 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.6 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.661 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.518 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.597 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.518/0.654/0.899 ms
+n9k3# 
+
+2024-04-30 18:27:25,489: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.989 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.613 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.534 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.749 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.539 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.534/0.684/0.989 ms
+n9k3# 
+
+2024-04-30 18:27:25,905: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.895 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.602 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.561 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.551 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.653 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.551/0.652/0.895 ms
+n9k3# 
+2024-04-30T18:27:26: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T18:27:26: %SCRIPT-INFO: {'sent_pkt': '5', 'receive_pkt': '5', 'pkt_loss': '0.00%'}
+2024-04-30T18:27:26: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T18:27:26: %SCRIPT-INFO: Sent : 5 packets and received: 5 packets and packet loss: 0.00%
+2024-04-30T18:27:26: %AETEST-INFO: Passed reason: Success: After applied for Rip ping got successful
+2024-04-30T18:27:26: %AETEST-INFO: The result of section check_ping_rip_timers is => PASSED
+2024-04-30T18:27:26: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:26: %AETEST-INFO: |              Starting section unconfigure_rip_timers_on_device               |
+2024-04-30T18:27:26: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:26: %SCRIPT-INFO: Unconfigure Rip timers on Routers
+
+2024-04-30 18:27:26,127: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# router rip 2
+n9k1(config-router)#   no address-family ipv4 unicast
+n9k1(config-router)#  end
+n9k1# 
+
+2024-04-30 18:27:29,875: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# router rip 2
+n9k4(config-router)#   no address-family ipv4 unicast
+n9k4(config-router)#  end
+n9k4# 
+2024-04-30T18:27:33: %AETEST-INFO: The result of section unconfigure_rip_timers_on_device is => PASSED
+2024-04-30T18:27:33: %AETEST-INFO: The result of testcase Rip_timers is => PASSED
+2024-04-30T18:27:33: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:33: %AETEST-INFO: |                        Starting testcase Rip_distance                        |
+2024-04-30T18:27:33: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:33: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:33: %AETEST-INFO: |              Starting section configure_rip_distance_on_device               |
+2024-04-30T18:27:33: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:33: %SCRIPT-INFO: Configure rip distance on device1:n9k1
+
+2024-04-30 18:27:33,522: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# router rip 2
+n9k1(config-router)#  address-family ipv4 unicast
+n9k1(config-router-af)#  distance 100
+n9k1(config-router-af)#  end
+n9k1# 
+2024-04-30T18:27:37: %SCRIPT-INFO: Configure rip distance on device3:n9k4
+
+2024-04-30 18:27:37,287: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# router rip 2
+n9k4(config-router)#  address-family ipv4 unicast
+n9k4(config-router-af)#  distance 100
+n9k4(config-router-af)#  end
+n9k4# 
+2024-04-30T18:27:41: %AETEST-INFO: The result of section configure_rip_distance_on_device is => PASSED
+2024-04-30T18:27:41: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:41: %AETEST-INFO: |                Starting section check_rip_distance_configured                |
+2024-04-30T18:27:41: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:41: %SCRIPT-INFO: Check rip distance configured or not 
+
+2024-04-30 18:27:41,336: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show ip rip' +++
+show ip rip
+RIP Isolate Mode: No
+MMODE: Initialized
+Process Name "rip-2" VRF "default"
+RIP port 520, multicast-group 224.0.0.9
+Admin-distance: 100 
+Updates every 30 sec, expire in 180 sec
+Collect garbage in 120 sec
+Default-metric: 1
+Max-paths: 16
+Process is up and running
+  Interfaces supported by ipv4 RIP :
+    Ethernet1/5
+    Ethernet1/11
+n9k1# 
+2024-04-30T18:27:41: %SCRIPT-INFO: RIP Isolate Mode: No
+2024-04-30T18:27:41: %SCRIPT-INFO: MMODE: Initialized
+2024-04-30T18:27:41: %SCRIPT-INFO: Process Name "rip-2" VRF "default"
+2024-04-30T18:27:41: %SCRIPT-INFO: RIP port 520, multicast-group 224.0.0.9
+2024-04-30T18:27:41: %SCRIPT-INFO: Admin-distance: 100 
+2024-04-30T18:27:41: %SCRIPT-INFO: Updates every 30 sec, expire in 180 sec
+2024-04-30T18:27:41: %SCRIPT-INFO: Collect garbage in 120 sec
+2024-04-30T18:27:41: %SCRIPT-INFO: Default-metric: 1
+2024-04-30T18:27:41: %SCRIPT-INFO: Max-paths: 16
+2024-04-30T18:27:41: %SCRIPT-INFO: Process is up and running
+2024-04-30T18:27:41: %SCRIPT-INFO:   Interfaces supported by ipv4 RIP :
+2024-04-30T18:27:41: %SCRIPT-INFO:     Ethernet1/5
+2024-04-30T18:27:41: %SCRIPT-INFO:     Ethernet1/11
+2024-04-30T18:27:41: %SCRIPT-INFO: Rip distance configured on device
+2024-04-30T18:27:41: %SCRIPT-INFO: Check Rip neighbor after configuring passive interface 
+
+2024-04-30 18:27:41,751: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show ip rip neighbor' +++
+show ip rip neighbor
+Process Name "rip-2" VRF "default"
+RIP Neighbor Information (number of neighbors = 2)
+('dead' means more than 300 seconds ago)
+
+10.10.10.2, Ethernet1/5
+    Last Response sent/received: 00:00:03/00:00:28
+    Last Request  sent/received: 00:01:02/00:00:55
+    Bad Pkts Received: 0
+    Bad Routes Received: 0
+12.12.12.2, Ethernet1/11
+    Last Response sent/received: 00:00:26/00:00:25
+    Last Request  sent/received: 00:00:37/00:00:36
+    Bad Pkts Received: 0
+    Bad Routes Received: 0
+n9k1# 
+2024-04-30T18:27:41: %SCRIPT-INFO: Process Name "rip-2" VRF "default"
+2024-04-30T18:27:41: %SCRIPT-INFO: RIP Neighbor Information (number of neighbors = 2)
+2024-04-30T18:27:41: %SCRIPT-INFO: ('dead' means more than 300 seconds ago)
+2024-04-30T18:27:41: %SCRIPT-INFO: 
+2024-04-30T18:27:41: %SCRIPT-INFO: 10.10.10.2, Ethernet1/5
+2024-04-30T18:27:41: %SCRIPT-INFO:     Last Response sent/received: 00:00:03/00:00:28
+2024-04-30T18:27:41: %SCRIPT-INFO:     Last Request  sent/received: 00:01:02/00:00:55
+2024-04-30T18:27:41: %SCRIPT-INFO:     Bad Pkts Received: 0
+2024-04-30T18:27:41: %SCRIPT-INFO:     Bad Routes Received: 0
+2024-04-30T18:27:41: %SCRIPT-INFO: 12.12.12.2, Ethernet1/11
+2024-04-30T18:27:41: %SCRIPT-INFO:     Last Response sent/received: 00:00:26/00:00:25
+2024-04-30T18:27:41: %SCRIPT-INFO:     Last Request  sent/received: 00:00:37/00:00:36
+2024-04-30T18:27:41: %SCRIPT-INFO:     Bad Pkts Received: 0
+2024-04-30T18:27:41: %SCRIPT-INFO:     Bad Routes Received: 0
+2024-04-30T18:27:41: %SCRIPT-INFO: Rip neighbor verification successful
+2024-04-30T18:27:41: %SCRIPT-INFO: Ping the ip configured on device3 and device1: n9k1 n9k4
+
+2024-04-30 18:27:42,151: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=1.173 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.672 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.842 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.715 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.668 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.668/0.813/1.173 ms
+n9k1# 
+
+2024-04-30 18:27:42,591: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=1.366 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.701 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.706 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.626 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.765 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.626/0.832/1.366 ms
+n9k1# 
+
+2024-04-30 18:27:42,998: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.889 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.727 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.743 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.69 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.69 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.69/0.747/0.889 ms
+n9k1# 
+
+2024-04-30 18:27:43,422: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.922 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.645 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.523 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.535 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.628 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.523/0.65/0.922 ms
+n9k1# 
+
+2024-04-30 18:27:43,879: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.983 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.72 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.688 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.804 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.828 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.688/0.804/0.983 ms
+n9k1# 
+2024-04-30T18:27:44: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T18:27:44: %SCRIPT-INFO: {'sent_pkt': '5', 'receive_pkt': '5', 'pkt_loss': '0.00%'}
+2024-04-30T18:27:44: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T18:27:44: %SCRIPT-INFO: Sent : 5 packets and received: 5 packets and packet loss: 0.00%
+2024-04-30T18:27:44: %AETEST-INFO: Passed reason: Success: After rip distance ping got successful
+2024-04-30T18:27:44: %AETEST-INFO: The result of section check_rip_distance_configured is => PASSED
+2024-04-30T18:27:44: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:44: %AETEST-INFO: |                  Starting section unconfigure_rip_distance                   |
+2024-04-30T18:27:44: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:44: %SCRIPT-INFO: Unconfigure rip distance on device1:n9k1
+
+2024-04-30 18:27:44,093: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# router rip 2
+n9k1(config-router)#   no address-family ipv4 unicast
+n9k1(config-router)#  end
+n9k1# 
+2024-04-30T18:27:47: %SCRIPT-INFO: Unconfigure rip distance on device3:n9k4
+
+2024-04-30 18:27:47,832: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# router rip 2
+n9k4(config-router)#   no address-family ipv4 unicast
+n9k4(config-router)#  end
+n9k4# 
+2024-04-30T18:27:51: %AETEST-INFO: The result of section unconfigure_rip_distance is => PASSED
+2024-04-30T18:27:51: %AETEST-INFO: The result of testcase Rip_distance is => PASSED
+2024-04-30T18:27:51: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:51: %AETEST-INFO: |                     Starting testcase Rip_Authentication                     |
+2024-04-30T18:27:51: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:51: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:51: %AETEST-INFO: |           Starting section configure_rip_authentication_on_device            |
+2024-04-30T18:27:51: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:51: %SCRIPT-INFO: Configure rip authentication on device1:n9k1
+
+2024-04-30 18:27:51,525: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# key chain rip
+n9k1(config-keychain)#  key 1
+n9k1(config-keychain-key)#  key-string 7 cisco
+invalid Type-7 String
+n9k1(config-keychain-key)#  exit
+n9k1(config-keychain)#  int ethernet1/11
+n9k1(config-if)#  ip rip authentication key-chain rip
+n9k1(config-if)#  ip rip authentication mode md5
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 18:27:55,818: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# key chain rip
+n9k4(config-keychain)#  key 1
+n9k4(config-keychain-key)#  key-string 7 cisco
+invalid Type-7 String
+n9k4(config-keychain-key)#  exit
+n9k4(config-keychain)#  int ethernet1/11
+n9k4(config-if)#  ip rip authentication key-chain rip
+n9k4(config-if)#  ip rip authentication mode md5
+n9k4(config-if)#  end
+n9k4# 
+2024-04-30T18:27:59: %AETEST-INFO: The result of section configure_rip_authentication_on_device is => PASSED
+2024-04-30T18:27:59: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:59: %AETEST-INFO: |             Starting section verification_of_rip_authentication              |
+2024-04-30T18:27:59: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:27:59: %SCRIPT-INFO: Verifying rip authentication 
+
+2024-04-30 18:28:00,226: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show ip rip interface ethernet1/11' +++
+show ip rip interface ethernet1/11
+Process Name "rip-2" VRF "default"
+RIP-configured interface information
+
+Ethernet1/11, protocol-up/link-up/admin-up, RIP state : up
+  address/mask 12.12.12.1/24, metric 1, split-horizon
+  Authentication Mode: md5  Keychain: rip
+
+n9k1# 
+2024-04-30T18:28:00: %SCRIPT-INFO: Process Name "rip-2" VRF "default"
+2024-04-30T18:28:00: %SCRIPT-INFO: RIP-configured interface information
+2024-04-30T18:28:00: %SCRIPT-INFO: 
+2024-04-30T18:28:00: %SCRIPT-INFO: Ethernet1/11, protocol-up/link-up/admin-up, RIP state : up
+2024-04-30T18:28:00: %SCRIPT-INFO:   address/mask 12.12.12.1/24, metric 1, split-horizon
+2024-04-30T18:28:00: %SCRIPT-INFO:   Authentication Mode: md5  Keychain: rip
+2024-04-30T18:28:00: %SCRIPT-INFO: RIP authentication configured on device
+2024-04-30T18:28:00: %SCRIPT-INFO: Ping the ip configured on device2: n9k4
+
+2024-04-30 18:28:00,650: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=1.039 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.796 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.825 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.653 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.913 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.653/0.845/1.039 ms
+n9k3# 
+
+2024-04-30 18:28:01,073: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.942 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.65 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.651 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.517 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.674 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.517/0.686/0.942 ms
+n9k3# 
+
+2024-04-30 18:28:01,472: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=1.005 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=1.209 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=1.9 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.905 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.922 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.905/1.188/1.9 ms
+n9k3# 
+
+2024-04-30 18:28:01,863: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.901 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.58 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.598 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.556 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.552 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.552/0.637/0.901 ms
+n9k3# 
+
+2024-04-30 18:28:02,295: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.975 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.628 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.637 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.601 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.574 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.574/0.682/0.975 ms
+n9k3# 
+2024-04-30T18:28:02: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T18:28:02: %SCRIPT-INFO: {'sent_pkt': '5', 'receive_pkt': '5', 'pkt_loss': '0.00%'}
+2024-04-30T18:28:02: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T18:28:02: %SCRIPT-INFO: Sent : 5 packets and received: 5 packets and packet loss: 0.00%
+2024-04-30T18:28:02: %AETEST-INFO: Passed reason: Success: After applied for Rip ping got successful
+2024-04-30T18:28:02: %AETEST-INFO: The result of section verification_of_rip_authentication is => PASSED
+2024-04-30T18:28:02: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:02: %AETEST-INFO: |               Starting section unconfigure_rip_pauthentication               |
+2024-04-30T18:28:02: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:02: %SCRIPT-INFO: Unconfigure Rip authentication on devices
+
+2024-04-30 18:28:02,475: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# no key chain rip
+n9k1(config)#   int ethernet1/11
+n9k1(config-if)#  no ip rip authentication key-chain rip
+n9k1(config-if)#  no ip rip authentication mode md5
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 18:28:06,425: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# no key chain rip
+n9k4(config)#   int ethernet1/11
+n9k4(config-if)#  no ip rip authentication key-chain rip
+n9k4(config-if)#  no ip rip authentication mode md5
+n9k4(config-if)#  end
+n9k4# 
+2024-04-30T18:28:10: %AETEST-INFO: The result of section unconfigure_rip_pauthentication is => PASSED
+2024-04-30T18:28:10: %AETEST-INFO: The result of testcase Rip_Authentication is => PASSED
+2024-04-30T18:28:10: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:10: %AETEST-INFO: |                        Starting testcase Rip_maxpaths                        |
+2024-04-30T18:28:10: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:10: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:10: %AETEST-INFO: |                  Starting section configuring_rip_maxpaths                   |
+2024-04-30T18:28:10: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:10: %SCRIPT-INFO: Configure Rip maxpaths on routers
+
+2024-04-30 18:28:10,333: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# router rip 2
+n9k1(config-router)#  address-family ipv4 unicast
+n9k1(config-router-af)#  maximum-paths 5
+n9k1(config-router-af)#  end
+n9k1# 
+
+2024-04-30 18:28:14,128: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# router rip 2
+n9k4(config-router)#  address-family ipv4 unicast
+n9k4(config-router-af)#  maximum-paths 5
+n9k4(config-router-af)#  end
+n9k4# 
+2024-04-30T18:28:17: %AETEST-INFO: The result of section configuring_rip_maxpaths is => PASSED
+2024-04-30T18:28:17: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:17: %AETEST-INFO: |                   Starting section check_ping_rip_maxpaths                   |
+2024-04-30T18:28:17: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:17: %SCRIPT-INFO: Check Rip maxpaths configured or not 
+
+2024-04-30 18:28:18,217: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show ip rip' +++
+show ip rip
+RIP Isolate Mode: No
+MMODE: Initialized
+Process Name "rip-2" VRF "default"
+RIP port 520, multicast-group 224.0.0.9
+Admin-distance: 120 
+Updates every 30 sec, expire in 180 sec
+Collect garbage in 120 sec
+Default-metric: 1
+Max-paths: 5
+Process is up and running
+  Interfaces supported by ipv4 RIP :
+    Ethernet1/5
+    Ethernet1/11
+n9k1# 
+2024-04-30T18:28:18: %SCRIPT-INFO: RIP Isolate Mode: No
+2024-04-30T18:28:18: %SCRIPT-INFO: MMODE: Initialized
+2024-04-30T18:28:18: %SCRIPT-INFO: Process Name "rip-2" VRF "default"
+2024-04-30T18:28:18: %SCRIPT-INFO: RIP port 520, multicast-group 224.0.0.9
+2024-04-30T18:28:18: %SCRIPT-INFO: Admin-distance: 120 
+2024-04-30T18:28:18: %SCRIPT-INFO: Updates every 30 sec, expire in 180 sec
+2024-04-30T18:28:18: %SCRIPT-INFO: Collect garbage in 120 sec
+2024-04-30T18:28:18: %SCRIPT-INFO: Default-metric: 1
+2024-04-30T18:28:18: %SCRIPT-INFO: Max-paths: 5
+2024-04-30T18:28:18: %SCRIPT-INFO: Process is up and running
+2024-04-30T18:28:18: %SCRIPT-INFO:   Interfaces supported by ipv4 RIP :
+2024-04-30T18:28:18: %SCRIPT-INFO:     Ethernet1/5
+2024-04-30T18:28:18: %SCRIPT-INFO:     Ethernet1/11
+2024-04-30T18:28:18: %SCRIPT-INFO: Rip max-paths configured on device
+2024-04-30T18:28:18: %SCRIPT-INFO: Check Rip maxpaths configured or not
+
+2024-04-30 18:28:18,673: %UNICON-INFO: +++ n9k4 with via 'cli': executing command 'show ip rip' +++
+show ip rip
+RIP Isolate Mode: No
+MMODE: Initialized
+Process Name "rip-2" VRF "default"
+RIP port 520, multicast-group 224.0.0.9
+Admin-distance: 120 
+Updates every 30 sec, expire in 180 sec
+Collect garbage in 120 sec
+Default-metric: 1
+Max-paths: 5
+Process is up and running
+  Interfaces supported by ipv4 RIP :
+    Ethernet1/9
+    Ethernet1/11
+n9k4# 
+2024-04-30T18:28:18: %SCRIPT-INFO: RIP Isolate Mode: No
+2024-04-30T18:28:18: %SCRIPT-INFO: MMODE: Initialized
+2024-04-30T18:28:18: %SCRIPT-INFO: Process Name "rip-2" VRF "default"
+2024-04-30T18:28:18: %SCRIPT-INFO: RIP port 520, multicast-group 224.0.0.9
+2024-04-30T18:28:18: %SCRIPT-INFO: Admin-distance: 120 
+2024-04-30T18:28:18: %SCRIPT-INFO: Updates every 30 sec, expire in 180 sec
+2024-04-30T18:28:18: %SCRIPT-INFO: Collect garbage in 120 sec
+2024-04-30T18:28:18: %SCRIPT-INFO: Default-metric: 1
+2024-04-30T18:28:18: %SCRIPT-INFO: Max-paths: 5
+2024-04-30T18:28:18: %SCRIPT-INFO: Process is up and running
+2024-04-30T18:28:18: %SCRIPT-INFO:   Interfaces supported by ipv4 RIP :
+2024-04-30T18:28:18: %SCRIPT-INFO:     Ethernet1/9
+2024-04-30T18:28:18: %SCRIPT-INFO:     Ethernet1/11
+2024-04-30T18:28:18: %SCRIPT-INFO: Rip maxpaths configured on device
+2024-04-30T18:28:18: %SCRIPT-INFO: Verifying Rip routes after configuring maxpaths
+
+2024-04-30 18:28:19,082: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show ip route' +++
+show ip route
+IP Route Table for VRF "default"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+'%<string>' in via output denotes VRF <string>
+
+0.0.0.0/0, ubest/mbest: 1/0
+    *via 192.168.10.2, Eth1/1, [1/0], 02:32:51, static
+10.0.1.0/24, ubest/mbest: 1/0, attached
+    *via 10.0.1.1, Lo0, [0/0], 1w0d, direct
+10.0.1.1/32, ubest/mbest: 1/0, attached
+    *via 10.0.1.1, Lo0, [0/0], 1w0d, local
+10.10.10.0/24, ubest/mbest: 1/0, attached
+    *via 10.10.10.1, Eth1/5, [0/0], 00:03:30, direct
+10.10.10.1/32, ubest/mbest: 1/0, attached
+    *via 10.10.10.1, Eth1/5, [0/0], 00:03:30, local
+11.11.11.0/24, ubest/mbest: 2/0
+    *via 10.10.10.2, Eth1/5, [120/2], 00:00:35, rip-2, rip
+    *via 12.12.12.2, Eth1/11, [120/2], 00:00:35, rip-2, rip
+12.12.12.0/24, ubest/mbest: 1/0, attached
+    *via 12.12.12.1, Eth1/11, [0/0], 00:03:27, direct
+12.12.12.1/32, ubest/mbest: 1/0, attached
+    *via 12.12.12.1, Eth1/11, [0/0], 00:03:27, local
+192.168.0.0/16, ubest/mbest: 1/0
+    *via 10.10.10.2, [1/0], 00:03:23, static
+192.168.10.0/24, ubest/mbest: 1/0, attached
+    *via 192.168.10.1, Eth1/1, [0/0], 02:32:51, direct
+192.168.10.1/32, ubest/mbest: 1/0, attached
+    *via 192.168.10.1, Eth1/1, [0/0], 02:32:51, local
+
+n9k1# 
+2024-04-30T18:28:19: %SCRIPT-INFO: IP Route Table for VRF "default"
+2024-04-30T18:28:19: %SCRIPT-INFO: '*' denotes best ucast next-hop
+2024-04-30T18:28:19: %SCRIPT-INFO: '**' denotes best mcast next-hop
+2024-04-30T18:28:19: %SCRIPT-INFO: '[x/y]' denotes [preference/metric]
+2024-04-30T18:28:19: %SCRIPT-INFO: '%<string>' in via output denotes VRF <string>
+2024-04-30T18:28:19: %SCRIPT-INFO: 
+2024-04-30T18:28:19: %SCRIPT-INFO: 0.0.0.0/0, ubest/mbest: 1/0
+2024-04-30T18:28:19: %SCRIPT-INFO:     *via 192.168.10.2, Eth1/1, [1/0], 02:32:51, static
+2024-04-30T18:28:19: %SCRIPT-INFO: 10.0.1.0/24, ubest/mbest: 1/0, attached
+2024-04-30T18:28:19: %SCRIPT-INFO:     *via 10.0.1.1, Lo0, [0/0], 1w0d, direct
+2024-04-30T18:28:19: %SCRIPT-INFO: 10.0.1.1/32, ubest/mbest: 1/0, attached
+2024-04-30T18:28:19: %SCRIPT-INFO:     *via 10.0.1.1, Lo0, [0/0], 1w0d, local
+2024-04-30T18:28:19: %SCRIPT-INFO: 10.10.10.0/24, ubest/mbest: 1/0, attached
+2024-04-30T18:28:19: %SCRIPT-INFO:     *via 10.10.10.1, Eth1/5, [0/0], 00:03:30, direct
+2024-04-30T18:28:19: %SCRIPT-INFO: 10.10.10.1/32, ubest/mbest: 1/0, attached
+2024-04-30T18:28:19: %SCRIPT-INFO:     *via 10.10.10.1, Eth1/5, [0/0], 00:03:30, local
+2024-04-30T18:28:19: %SCRIPT-INFO: 11.11.11.0/24, ubest/mbest: 2/0
+2024-04-30T18:28:19: %SCRIPT-INFO:     *via 10.10.10.2, Eth1/5, [120/2], 00:00:35, rip-2, rip
+2024-04-30T18:28:19: %SCRIPT-INFO:     *via 12.12.12.2, Eth1/11, [120/2], 00:00:35, rip-2, rip
+2024-04-30T18:28:19: %SCRIPT-INFO: 12.12.12.0/24, ubest/mbest: 1/0, attached
+2024-04-30T18:28:19: %SCRIPT-INFO:     *via 12.12.12.1, Eth1/11, [0/0], 00:03:27, direct
+2024-04-30T18:28:19: %SCRIPT-INFO: 12.12.12.1/32, ubest/mbest: 1/0, attached
+2024-04-30T18:28:19: %SCRIPT-INFO:     *via 12.12.12.1, Eth1/11, [0/0], 00:03:27, local
+2024-04-30T18:28:19: %SCRIPT-INFO: 192.168.0.0/16, ubest/mbest: 1/0
+2024-04-30T18:28:19: %SCRIPT-INFO:     *via 10.10.10.2, [1/0], 00:03:23, static
+2024-04-30T18:28:19: %SCRIPT-INFO: 192.168.10.0/24, ubest/mbest: 1/0, attached
+2024-04-30T18:28:19: %SCRIPT-INFO:     *via 192.168.10.1, Eth1/1, [0/0], 02:32:51, direct
+2024-04-30T18:28:19: %SCRIPT-INFO: 192.168.10.1/32, ubest/mbest: 1/0, attached
+2024-04-30T18:28:19: %SCRIPT-INFO:     *via 192.168.10.1, Eth1/1, [0/0], 02:32:51, local
+2024-04-30T18:28:19: %SCRIPT-INFO: Rip routes are present
+2024-04-30T18:28:19: %SCRIPT-INFO: Ping the ip configured on device2: n9k4 to check in bound
+
+2024-04-30 18:28:19,548: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=1.099 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.751 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.655 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.621 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.666 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.621/0.758/1.099 ms
+n9k3# 
+
+2024-04-30 18:28:19,988: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=1.054 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.68 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.841 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.721 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.616 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.616/0.782/1.054 ms
+n9k3# 
+
+2024-04-30 18:28:20,379: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.975 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.64 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.576 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.677 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=1.117 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.576/0.796/1.117 ms
+n9k3# 
+2024-04-30T18:28:20: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T18:28:20: %SCRIPT-INFO: {'sent_pkt': '5', 'receive_pkt': '5', 'pkt_loss': '0.00%'}
+2024-04-30T18:28:20: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T18:28:20: %SCRIPT-INFO: Sent : 5 packets and received: 5 packets and packet loss: 0.00%
+2024-04-30T18:28:20: %AETEST-INFO: Passed reason: Success: After applied for Rip ping got successful
+2024-04-30T18:28:20: %AETEST-INFO: The result of section check_ping_rip_maxpaths is => PASSED
+2024-04-30T18:28:20: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:20: %AETEST-INFO: |             Starting section unconfigure_rip_maxpaths_on_device              |
+2024-04-30T18:28:20: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:20: %SCRIPT-INFO: Unconfigure Rip maxpaths on Routers
+
+2024-04-30 18:28:20,593: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# router rip 2
+n9k1(config-router)#   no address-family ipv4 unicast
+n9k1(config-router)#  end
+n9k1# 
+
+2024-04-30 18:28:24,260: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# router rip 2
+n9k4(config-router)#   no address-family ipv4 unicast
+n9k4(config-router)#  end
+n9k4# 
+2024-04-30T18:28:27: %AETEST-INFO: The result of section unconfigure_rip_maxpaths_on_device is => PASSED
+2024-04-30T18:28:27: %AETEST-INFO: The result of testcase Rip_maxpaths is => PASSED
+2024-04-30T18:28:27: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:27: %AETEST-INFO: |                     Starting testcase Rip_redistribution                     |
+2024-04-30T18:28:27: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:27: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:27: %AETEST-INFO: |               Starting section configuring_rip_redistribution                |
+2024-04-30T18:28:27: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:27: %SCRIPT-INFO: Configure Rip redistribution on routers
+
+2024-04-30 18:28:27,914: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# router rip 2
+n9k1(config-router)#  address-family ipv4 unicast
+n9k1(config-router-af)#  redistribute ospf 1 route-map rip
+n9k1(config-router-af)#  route-map rip permit
+n9k1(config-route-map)#  end
+n9k1# 
+
+2024-04-30 18:28:31,854: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# router rip 2
+n9k4(config-router)#  address-family ipv4 unicast
+n9k4(config-router-af)#  redistribute ospf 1 route-map rip
+n9k4(config-router-af)#  route-map rip permit
+n9k4(config-route-map)#  end
+n9k4# 
+2024-04-30T18:28:35: %AETEST-INFO: The result of section configuring_rip_redistribution is => PASSED
+2024-04-30T18:28:35: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:35: %AETEST-INFO: |             Starting section check_ping_after_rip_redistribution             |
+2024-04-30T18:28:35: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:35: %SCRIPT-INFO: Check Rip redistribution configured or not 
+
+2024-04-30 18:28:36,059: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show ip rip' +++
+show ip rip
+RIP Isolate Mode: No
+MMODE: Initialized
+Process Name "rip-2" VRF "default"
+RIP port 520, multicast-group 224.0.0.9
+Admin-distance: 120 
+Updates every 30 sec, expire in 180 sec
+Collect garbage in 120 sec
+Default-metric: 1
+Max-paths: 16
+Process is up and running
+  Interfaces supported by ipv4 RIP :
+    Ethernet1/5
+    Ethernet1/11
+  Redistributing :
+    ospf-1          policy rip
+n9k1# 
+2024-04-30T18:28:36: %SCRIPT-INFO: RIP Isolate Mode: No
+2024-04-30T18:28:36: %SCRIPT-INFO: MMODE: Initialized
+2024-04-30T18:28:36: %SCRIPT-INFO: Process Name "rip-2" VRF "default"
+2024-04-30T18:28:36: %SCRIPT-INFO: RIP port 520, multicast-group 224.0.0.9
+2024-04-30T18:28:36: %SCRIPT-INFO: Admin-distance: 120 
+2024-04-30T18:28:36: %SCRIPT-INFO: Updates every 30 sec, expire in 180 sec
+2024-04-30T18:28:36: %SCRIPT-INFO: Collect garbage in 120 sec
+2024-04-30T18:28:36: %SCRIPT-INFO: Default-metric: 1
+2024-04-30T18:28:36: %SCRIPT-INFO: Max-paths: 16
+2024-04-30T18:28:36: %SCRIPT-INFO: Process is up and running
+2024-04-30T18:28:36: %SCRIPT-INFO:   Interfaces supported by ipv4 RIP :
+2024-04-30T18:28:36: %SCRIPT-INFO:     Ethernet1/5
+2024-04-30T18:28:36: %SCRIPT-INFO:     Ethernet1/11
+2024-04-30T18:28:36: %SCRIPT-INFO:   Redistributing :
+2024-04-30T18:28:36: %SCRIPT-INFO:     ospf-1          policy rip
+2024-04-30T18:28:36: %SCRIPT-INFO: Rip redistribution configured on device
+2024-04-30T18:28:36: %SCRIPT-INFO: Check Rip redistribution configured or not
+
+2024-04-30 18:28:36,500: %UNICON-INFO: +++ n9k4 with via 'cli': executing command 'show ip rip' +++
+show ip rip
+RIP Isolate Mode: No
+MMODE: Initialized
+Process Name "rip-2" VRF "default"
+RIP port 520, multicast-group 224.0.0.9
+Admin-distance: 120 
+Updates every 30 sec, expire in 180 sec
+Collect garbage in 120 sec
+Default-metric: 1
+Max-paths: 16
+Process is up and running
+  Interfaces supported by ipv4 RIP :
+    Ethernet1/9
+    Ethernet1/11
+  Redistributing :
+    ospf-1          policy rip
+n9k4# 
+2024-04-30T18:28:36: %SCRIPT-INFO: RIP Isolate Mode: No
+2024-04-30T18:28:36: %SCRIPT-INFO: MMODE: Initialized
+2024-04-30T18:28:36: %SCRIPT-INFO: Process Name "rip-2" VRF "default"
+2024-04-30T18:28:36: %SCRIPT-INFO: RIP port 520, multicast-group 224.0.0.9
+2024-04-30T18:28:36: %SCRIPT-INFO: Admin-distance: 120 
+2024-04-30T18:28:36: %SCRIPT-INFO: Updates every 30 sec, expire in 180 sec
+2024-04-30T18:28:36: %SCRIPT-INFO: Collect garbage in 120 sec
+2024-04-30T18:28:36: %SCRIPT-INFO: Default-metric: 1
+2024-04-30T18:28:36: %SCRIPT-INFO: Max-paths: 16
+2024-04-30T18:28:36: %SCRIPT-INFO: Process is up and running
+2024-04-30T18:28:36: %SCRIPT-INFO:   Interfaces supported by ipv4 RIP :
+2024-04-30T18:28:36: %SCRIPT-INFO:     Ethernet1/9
+2024-04-30T18:28:36: %SCRIPT-INFO:     Ethernet1/11
+2024-04-30T18:28:36: %SCRIPT-INFO:   Redistributing :
+2024-04-30T18:28:36: %SCRIPT-INFO:     ospf-1          policy rip
+2024-04-30T18:28:36: %SCRIPT-INFO: Rip redistribution configured on device
+2024-04-30T18:28:36: %SCRIPT-INFO: Verifying Rip routes after configuring redistribution
+
+2024-04-30 18:28:36,948: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show ip route' +++
+show ip route
+IP Route Table for VRF "default"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+'%<string>' in via output denotes VRF <string>
+
+0.0.0.0/0, ubest/mbest: 1/0
+    *via 192.168.10.2, Eth1/1, [1/0], 02:33:08, static
+10.0.1.0/24, ubest/mbest: 1/0, attached
+    *via 10.0.1.1, Lo0, [0/0], 1w0d, direct
+10.0.1.1/32, ubest/mbest: 1/0, attached
+    *via 10.0.1.1, Lo0, [0/0], 1w0d, local
+10.10.10.0/24, ubest/mbest: 1/0, attached
+    *via 10.10.10.1, Eth1/5, [0/0], 00:03:47, direct
+10.10.10.1/32, ubest/mbest: 1/0, attached
+    *via 10.10.10.1, Eth1/5, [0/0], 00:03:47, local
+11.11.11.0/24, ubest/mbest: 2/0
+    *via 10.10.10.2, Eth1/5, [120/2], 00:00:52, rip-2, rip
+    *via 12.12.12.2, Eth1/11, [120/2], 00:00:52, rip-2, rip
+12.12.12.0/24, ubest/mbest: 1/0, attached
+    *via 12.12.12.1, Eth1/11, [0/0], 00:03:44, direct
+12.12.12.1/32, ubest/mbest: 1/0, attached
+    *via 12.12.12.1, Eth1/11, [0/0], 00:03:44, local
+192.168.0.0/16, ubest/mbest: 1/0
+    *via 10.10.10.2, [1/0], 00:03:40, static
+192.168.10.0/24, ubest/mbest: 1/0, attached
+    *via 192.168.10.1, Eth1/1, [0/0], 02:33:08, direct
+192.168.10.1/32, ubest/mbest: 1/0, attached
+    *via 192.168.10.1, Eth1/1, [0/0], 02:33:08, local
+
+n9k1# 
+2024-04-30T18:28:37: %SCRIPT-INFO: IP Route Table for VRF "default"
+2024-04-30T18:28:37: %SCRIPT-INFO: '*' denotes best ucast next-hop
+2024-04-30T18:28:37: %SCRIPT-INFO: '**' denotes best mcast next-hop
+2024-04-30T18:28:37: %SCRIPT-INFO: '[x/y]' denotes [preference/metric]
+2024-04-30T18:28:37: %SCRIPT-INFO: '%<string>' in via output denotes VRF <string>
+2024-04-30T18:28:37: %SCRIPT-INFO: 
+2024-04-30T18:28:37: %SCRIPT-INFO: 0.0.0.0/0, ubest/mbest: 1/0
+2024-04-30T18:28:37: %SCRIPT-INFO:     *via 192.168.10.2, Eth1/1, [1/0], 02:33:08, static
+2024-04-30T18:28:37: %SCRIPT-INFO: 10.0.1.0/24, ubest/mbest: 1/0, attached
+2024-04-30T18:28:37: %SCRIPT-INFO:     *via 10.0.1.1, Lo0, [0/0], 1w0d, direct
+2024-04-30T18:28:37: %SCRIPT-INFO: 10.0.1.1/32, ubest/mbest: 1/0, attached
+2024-04-30T18:28:37: %SCRIPT-INFO:     *via 10.0.1.1, Lo0, [0/0], 1w0d, local
+2024-04-30T18:28:37: %SCRIPT-INFO: 10.10.10.0/24, ubest/mbest: 1/0, attached
+2024-04-30T18:28:37: %SCRIPT-INFO:     *via 10.10.10.1, Eth1/5, [0/0], 00:03:47, direct
+2024-04-30T18:28:37: %SCRIPT-INFO: 10.10.10.1/32, ubest/mbest: 1/0, attached
+2024-04-30T18:28:37: %SCRIPT-INFO:     *via 10.10.10.1, Eth1/5, [0/0], 00:03:47, local
+2024-04-30T18:28:37: %SCRIPT-INFO: 11.11.11.0/24, ubest/mbest: 2/0
+2024-04-30T18:28:37: %SCRIPT-INFO:     *via 10.10.10.2, Eth1/5, [120/2], 00:00:52, rip-2, rip
+2024-04-30T18:28:37: %SCRIPT-INFO:     *via 12.12.12.2, Eth1/11, [120/2], 00:00:52, rip-2, rip
+2024-04-30T18:28:37: %SCRIPT-INFO: 12.12.12.0/24, ubest/mbest: 1/0, attached
+2024-04-30T18:28:37: %SCRIPT-INFO:     *via 12.12.12.1, Eth1/11, [0/0], 00:03:44, direct
+2024-04-30T18:28:37: %SCRIPT-INFO: 12.12.12.1/32, ubest/mbest: 1/0, attached
+2024-04-30T18:28:37: %SCRIPT-INFO:     *via 12.12.12.1, Eth1/11, [0/0], 00:03:44, local
+2024-04-30T18:28:37: %SCRIPT-INFO: 192.168.0.0/16, ubest/mbest: 1/0
+2024-04-30T18:28:37: %SCRIPT-INFO:     *via 10.10.10.2, [1/0], 00:03:40, static
+2024-04-30T18:28:37: %SCRIPT-INFO: 192.168.10.0/24, ubest/mbest: 1/0, attached
+2024-04-30T18:28:37: %SCRIPT-INFO:     *via 192.168.10.1, Eth1/1, [0/0], 02:33:08, direct
+2024-04-30T18:28:37: %SCRIPT-INFO: 192.168.10.1/32, ubest/mbest: 1/0, attached
+2024-04-30T18:28:37: %SCRIPT-INFO:     *via 192.168.10.1, Eth1/1, [0/0], 02:33:08, local
+2024-04-30T18:28:37: %SCRIPT-INFO: Rip routes are present
+2024-04-30T18:28:37: %SCRIPT-INFO: Ping the ip configured on device2: n9k4 to check in bound
+
+2024-04-30 18:28:37,356: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=1.002 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.645 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=4.898 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.759 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.632 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.632/1.587/4.898 ms
+n9k3# 
+
+2024-04-30 18:28:37,779: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.901 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.582 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.776 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.79 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.815 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.582/0.772/0.901 ms
+n9k3# 
+
+2024-04-30 18:28:38,170: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.926 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.61 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.553 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.559 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.646 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.553/0.658/0.926 ms
+n9k3# 
+2024-04-30T18:28:38: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T18:28:38: %SCRIPT-INFO: {'sent_pkt': '5', 'receive_pkt': '5', 'pkt_loss': '0.00%'}
+2024-04-30T18:28:38: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T18:28:38: %SCRIPT-INFO: Sent : 5 packets and received: 5 packets and packet loss: 0.00%
+2024-04-30T18:28:38: %AETEST-INFO: Passed reason: Success: After applied for Rip ping got successful
+2024-04-30T18:28:38: %AETEST-INFO: The result of section check_ping_after_rip_redistribution is => PASSED
+2024-04-30T18:28:38: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:38: %AETEST-INFO: |          Starting section unconfigure_rip_redistribution_on_device           |
+2024-04-30T18:28:38: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:38: %SCRIPT-INFO: Unconfigure Rip redistribution on Routers
+
+2024-04-30 18:28:38,358: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# router rip 2
+n9k1(config-router)#   no address-family ipv4 unicast
+n9k1(config-router)#  end
+n9k1# 
+
+2024-04-30 18:28:42,073: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# router rip 2
+n9k4(config-router)#   no address-family ipv4 unicast
+n9k4(config-router)#  end
+n9k4# 
+2024-04-30T18:28:45: %AETEST-INFO: The result of section unconfigure_rip_redistribution_on_device is => PASSED
+2024-04-30T18:28:45: %AETEST-INFO: The result of testcase Rip_redistribution is => PASSED
+2024-04-30T18:28:45: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:45: %AETEST-INFO: |           Starting testcase Unconfigure_and_configure_Rip_testcase           |
+2024-04-30T18:28:45: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:45: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:45: %AETEST-INFO: |                   Starting section unconfigure_rip_routers                   |
+2024-04-30T18:28:45: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:28:45: %SCRIPT-INFO: Unconfigure rip on routers
+
+2024-04-30 18:28:45,782: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# no router rip 2
+n9k1(config)#  end
+n9k1# 
+
+2024-04-30 18:28:49,812: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# no router rip 2
+n9k3(config)#  end
+n9k3# 
+
+2024-04-30 18:28:53,723: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# no router rip 2
+n9k4(config)#  end
+n9k4# 
+2024-04-30T18:28:57: %SCRIPT-INFO: Unconfigure rip in interface
+
+2024-04-30 18:28:57,714: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/5
+n9k1(config-if)#  no ip router rip 2
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 18:29:01,375: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/11
+n9k1(config-if)#  no ip router rip 2
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 18:29:05,022: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/5
+n9k3(config-if)#  no ip router rip 2
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 18:29:08,728: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/9
+n9k3(config-if)#  no ip router rip 2
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 18:29:12,437: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/9
+n9k4(config-if)#  no ip router rip 2
+n9k4(config-if)#  end
+n9k4# 
+
+2024-04-30 18:29:16,067: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/11
+n9k4(config-if)#  no ip router rip 2
+n9k4(config-if)#  end
+n9k4# 
+2024-04-30T18:29:19: %AETEST-INFO: The result of section unconfigure_rip_routers is => PASSED
+2024-04-30T18:29:19: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:29:19: %AETEST-INFO: |                  Starting section configure_rip_on_routers                   |
+2024-04-30T18:29:19: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:29:19: %SCRIPT-INFO: Configure rip on routers
+
+2024-04-30 18:29:19,711: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# router rip 2
+n9k1(config-router)#  version 2
+n9k1(config)#  end
+n9k1# 
+
+2024-04-30 18:29:24,590: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# router rip 2
+n9k3(config-router)#  version 2
+n9k3(config)#  end
+n9k3# 
+
+2024-04-30 18:29:29,400: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# router rip 2
+n9k4(config-router)#  version 2
+n9k4(config)#  end
+n9k4# 
+2024-04-30T18:29:34: %SCRIPT-INFO: Configure rip in interface
+
+2024-04-30 18:29:34,020: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/5
+n9k1(config-if)#  ip router rip 2
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 18:29:37,659: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/11
+n9k1(config-if)#  ip router rip 2
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 18:29:41,282: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/5
+n9k3(config-if)#  ip router rip 2
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 18:29:44,920: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/9
+n9k3(config-if)#  ip router rip 2
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 18:29:48,561: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/9
+n9k4(config-if)#  ip router rip 2
+n9k4(config-if)#  end
+n9k4# 
+
+2024-04-30 18:29:52,225: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/11
+n9k4(config-if)#  ip router rip 2
+n9k4(config-if)#  end
+n9k4# 
+2024-04-30T18:29:55: %SCRIPT-INFO: Check rip configured or not 
+
+2024-04-30 18:29:56,108: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show ip rip neighbor' +++
+show ip rip neighbor
+Process Name "rip-2" VRF "default"
+RIP Neighbor Information (number of neighbors = 2)
+('dead' means more than 300 seconds ago)
+
+10.10.10.2, Ethernet1/5
+    Last Response sent/received: 00:00:16/00:00:08
+    Last Request  sent/received: 00:00:22/00:00:15
+    Bad Pkts Received: 0
+    Bad Routes Received: 0
+12.12.12.2, Ethernet1/11
+    Last Response sent/received: 00:00:07/00:00:04
+    Last Request  sent/received: 00:00:18/00:00:04
+    Bad Pkts Received: 0
+    Bad Routes Received: 0
+n9k1# 
+2024-04-30T18:29:56: %SCRIPT-INFO: Process Name "rip-2" VRF "default"
+2024-04-30T18:29:56: %SCRIPT-INFO: RIP Neighbor Information (number of neighbors = 2)
+2024-04-30T18:29:56: %SCRIPT-INFO: ('dead' means more than 300 seconds ago)
+2024-04-30T18:29:56: %SCRIPT-INFO: 
+2024-04-30T18:29:56: %SCRIPT-INFO: 10.10.10.2, Ethernet1/5
+2024-04-30T18:29:56: %SCRIPT-INFO:     Last Response sent/received: 00:00:16/00:00:08
+2024-04-30T18:29:56: %SCRIPT-INFO:     Last Request  sent/received: 00:00:22/00:00:15
+2024-04-30T18:29:56: %SCRIPT-INFO:     Bad Pkts Received: 0
+2024-04-30T18:29:56: %SCRIPT-INFO:     Bad Routes Received: 0
+2024-04-30T18:29:56: %SCRIPT-INFO: 12.12.12.2, Ethernet1/11
+2024-04-30T18:29:56: %SCRIPT-INFO:     Last Response sent/received: 00:00:07/00:00:04
+2024-04-30T18:29:56: %SCRIPT-INFO:     Last Request  sent/received: 00:00:18/00:00:04
+2024-04-30T18:29:56: %SCRIPT-INFO:     Bad Pkts Received: 0
+2024-04-30T18:29:56: %SCRIPT-INFO:     Bad Routes Received: 0
+2024-04-30T18:29:56: %SCRIPT-INFO: RIP configured on device
+
+2024-04-30 18:29:56,515: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'show ip rip neighbor' +++
+show ip rip neighbor
+Process Name "rip-2" VRF "default"
+RIP Neighbor Information (number of neighbors = 2)
+('dead' means more than 300 seconds ago)
+
+10.10.10.1, Ethernet1/5
+    Last Response sent/received: 00:00:08/00:00:15
+    Last Request  sent/received: 00:00:15/never
+    Bad Pkts Received: 0
+    Bad Routes Received: 0
+11.11.11.2, Ethernet1/9
+    Last Response sent/received: 00:00:12/00:00:03
+    Last Request  sent/received: 00:00:12/00:00:08
+    Bad Pkts Received: 0
+    Bad Routes Received: 0
+n9k3# 
+2024-04-30T18:29:56: %SCRIPT-INFO: Process Name "rip-2" VRF "default"
+2024-04-30T18:29:56: %SCRIPT-INFO: RIP Neighbor Information (number of neighbors = 2)
+2024-04-30T18:29:56: %SCRIPT-INFO: ('dead' means more than 300 seconds ago)
+2024-04-30T18:29:56: %SCRIPT-INFO: 
+2024-04-30T18:29:56: %SCRIPT-INFO: 10.10.10.1, Ethernet1/5
+2024-04-30T18:29:56: %SCRIPT-INFO:     Last Response sent/received: 00:00:08/00:00:15
+2024-04-30T18:29:56: %SCRIPT-INFO:     Last Request  sent/received: 00:00:15/never
+2024-04-30T18:29:56: %SCRIPT-INFO:     Bad Pkts Received: 0
+2024-04-30T18:29:56: %SCRIPT-INFO:     Bad Routes Received: 0
+2024-04-30T18:29:56: %SCRIPT-INFO: 11.11.11.2, Ethernet1/9
+2024-04-30T18:29:56: %SCRIPT-INFO:     Last Response sent/received: 00:00:12/00:00:03
+2024-04-30T18:29:56: %SCRIPT-INFO:     Last Request  sent/received: 00:00:12/00:00:08
+2024-04-30T18:29:56: %SCRIPT-INFO:     Bad Pkts Received: 0
+2024-04-30T18:29:56: %SCRIPT-INFO:     Bad Routes Received: 0
+2024-04-30T18:29:56: %SCRIPT-INFO: RIP configured on device
+
+2024-04-30 18:29:56,907: %UNICON-INFO: +++ n9k4 with via 'cli': executing command 'show ip rip neighbor' +++
+show ip rip neighbor
+Process Name "rip-2" VRF "default"
+RIP Neighbor Information (number of neighbors = 2)
+('dead' means more than 300 seconds ago)
+
+11.11.11.1, Ethernet1/9
+    Last Response sent/received: 00:00:03/00:00:08
+    Last Request  sent/received: 00:00:08/never
+    Bad Pkts Received: 0
+    Bad Routes Received: 0
+12.12.12.1, Ethernet1/11
+    Last Response sent/received: 00:00:04/00:00:04
+    Last Request  sent/received: 00:00:04/never
+    Bad Pkts Received: 0
+    Bad Routes Received: 0
+n9k4# 
+2024-04-30T18:29:57: %SCRIPT-INFO: Process Name "rip-2" VRF "default"
+2024-04-30T18:29:57: %SCRIPT-INFO: RIP Neighbor Information (number of neighbors = 2)
+2024-04-30T18:29:57: %SCRIPT-INFO: ('dead' means more than 300 seconds ago)
+2024-04-30T18:29:57: %SCRIPT-INFO: 
+2024-04-30T18:29:57: %SCRIPT-INFO: 11.11.11.1, Ethernet1/9
+2024-04-30T18:29:57: %SCRIPT-INFO:     Last Response sent/received: 00:00:03/00:00:08
+2024-04-30T18:29:57: %SCRIPT-INFO:     Last Request  sent/received: 00:00:08/never
+2024-04-30T18:29:57: %SCRIPT-INFO:     Bad Pkts Received: 0
+2024-04-30T18:29:57: %SCRIPT-INFO:     Bad Routes Received: 0
+2024-04-30T18:29:57: %SCRIPT-INFO: 12.12.12.1, Ethernet1/11
+2024-04-30T18:29:57: %SCRIPT-INFO:     Last Response sent/received: 00:00:04/00:00:04
+2024-04-30T18:29:57: %SCRIPT-INFO:     Last Request  sent/received: 00:00:04/never
+2024-04-30T18:29:57: %SCRIPT-INFO:     Bad Pkts Received: 0
+2024-04-30T18:29:57: %SCRIPT-INFO:     Bad Routes Received: 0
+2024-04-30T18:29:57: %SCRIPT-INFO: RIP configured on device
+
+2024-04-30 18:29:57,331: %UNICON-INFO: +++ n9k1 with via 'cli': executing command 'show ip route' +++
+show ip route
+IP Route Table for VRF "default"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+'%<string>' in via output denotes VRF <string>
+
+0.0.0.0/0, ubest/mbest: 1/0
+    *via 192.168.10.2, Eth1/1, [1/0], 02:34:29, static
+10.0.1.0/24, ubest/mbest: 1/0, attached
+    *via 10.0.1.1, Lo0, [0/0], 1w0d, direct
+10.0.1.1/32, ubest/mbest: 1/0, attached
+    *via 10.0.1.1, Lo0, [0/0], 1w0d, local
+10.10.10.0/24, ubest/mbest: 1/0, attached
+    *via 10.10.10.1, Eth1/5, [0/0], 00:05:08, direct
+10.10.10.1/32, ubest/mbest: 1/0, attached
+    *via 10.10.10.1, Eth1/5, [0/0], 00:05:08, local
+11.11.11.0/24, ubest/mbest: 2/0
+    *via 10.10.10.2, Eth1/5, [120/2], 00:00:09, rip-2, rip
+    *via 12.12.12.2, Eth1/11, [120/2], 00:00:05, rip-2, rip
+12.12.12.0/24, ubest/mbest: 1/0, attached
+    *via 12.12.12.1, Eth1/11, [0/0], 00:05:05, direct
+12.12.12.1/32, ubest/mbest: 1/0, attached
+    *via 12.12.12.1, Eth1/11, [0/0], 00:05:05, local
+192.168.0.0/16, ubest/mbest: 1/0
+    *via 10.10.10.2, [1/0], 00:05:01, static
+192.168.10.0/24, ubest/mbest: 1/0, attached
+    *via 192.168.10.1, Eth1/1, [0/0], 02:34:29, direct
+192.168.10.1/32, ubest/mbest: 1/0, attached
+    *via 192.168.10.1, Eth1/1, [0/0], 02:34:29, local
+
+n9k1# 
+2024-04-30T18:29:57: %SCRIPT-INFO: IP Route Table for VRF "default"
+2024-04-30T18:29:57: %SCRIPT-INFO: '*' denotes best ucast next-hop
+2024-04-30T18:29:57: %SCRIPT-INFO: '**' denotes best mcast next-hop
+2024-04-30T18:29:57: %SCRIPT-INFO: '[x/y]' denotes [preference/metric]
+2024-04-30T18:29:57: %SCRIPT-INFO: '%<string>' in via output denotes VRF <string>
+2024-04-30T18:29:57: %SCRIPT-INFO: 
+2024-04-30T18:29:57: %SCRIPT-INFO: 0.0.0.0/0, ubest/mbest: 1/0
+2024-04-30T18:29:57: %SCRIPT-INFO:     *via 192.168.10.2, Eth1/1, [1/0], 02:34:29, static
+2024-04-30T18:29:57: %SCRIPT-INFO: 10.0.1.0/24, ubest/mbest: 1/0, attached
+2024-04-30T18:29:57: %SCRIPT-INFO:     *via 10.0.1.1, Lo0, [0/0], 1w0d, direct
+2024-04-30T18:29:57: %SCRIPT-INFO: 10.0.1.1/32, ubest/mbest: 1/0, attached
+2024-04-30T18:29:57: %SCRIPT-INFO:     *via 10.0.1.1, Lo0, [0/0], 1w0d, local
+2024-04-30T18:29:57: %SCRIPT-INFO: 10.10.10.0/24, ubest/mbest: 1/0, attached
+2024-04-30T18:29:57: %SCRIPT-INFO:     *via 10.10.10.1, Eth1/5, [0/0], 00:05:08, direct
+2024-04-30T18:29:57: %SCRIPT-INFO: 10.10.10.1/32, ubest/mbest: 1/0, attached
+2024-04-30T18:29:57: %SCRIPT-INFO:     *via 10.10.10.1, Eth1/5, [0/0], 00:05:08, local
+2024-04-30T18:29:57: %SCRIPT-INFO: 11.11.11.0/24, ubest/mbest: 2/0
+2024-04-30T18:29:57: %SCRIPT-INFO:     *via 10.10.10.2, Eth1/5, [120/2], 00:00:09, rip-2, rip
+2024-04-30T18:29:57: %SCRIPT-INFO:     *via 12.12.12.2, Eth1/11, [120/2], 00:00:05, rip-2, rip
+2024-04-30T18:29:57: %SCRIPT-INFO: 12.12.12.0/24, ubest/mbest: 1/0, attached
+2024-04-30T18:29:57: %SCRIPT-INFO:     *via 12.12.12.1, Eth1/11, [0/0], 00:05:05, direct
+2024-04-30T18:29:57: %SCRIPT-INFO: 12.12.12.1/32, ubest/mbest: 1/0, attached
+2024-04-30T18:29:57: %SCRIPT-INFO:     *via 12.12.12.1, Eth1/11, [0/0], 00:05:05, local
+2024-04-30T18:29:57: %SCRIPT-INFO: 192.168.0.0/16, ubest/mbest: 1/0
+2024-04-30T18:29:57: %SCRIPT-INFO:     *via 10.10.10.2, [1/0], 00:05:01, static
+2024-04-30T18:29:57: %SCRIPT-INFO: 192.168.10.0/24, ubest/mbest: 1/0, attached
+2024-04-30T18:29:57: %SCRIPT-INFO:     *via 192.168.10.1, Eth1/1, [0/0], 02:34:29, direct
+2024-04-30T18:29:57: %SCRIPT-INFO: 192.168.10.1/32, ubest/mbest: 1/0, attached
+2024-04-30T18:29:57: %SCRIPT-INFO:     *via 192.168.10.1, Eth1/1, [0/0], 02:34:29, local
+2024-04-30T18:29:57: %SCRIPT-INFO: RIP configured on device
+2024-04-30T18:29:57: %SCRIPT-INFO: Ping the ip configured on device2: n9k4
+
+2024-04-30 18:29:57,763: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.919 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.646 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.641 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.532 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.648 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.532/0.677/0.919 ms
+n9k3# 
+
+2024-04-30 18:29:58,161: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.984 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.672 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.638 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.84 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=4.428 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.638/1.512/4.428 ms
+n9k3# 
+
+2024-04-30 18:29:58,552: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=0.933 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.721 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.647 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.528 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.614 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.528/0.688/0.933 ms
+n9k3# 
+
+2024-04-30 18:29:58,959: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=1.134 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.733 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.973 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.882 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.824 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.733/0.909/1.134 ms
+n9k3# 
+
+2024-04-30 18:29:59,359: %UNICON-INFO: +++ n9k3 with via 'cli': executing command 'ping 11.11.11.2' +++
+ping 11.11.11.2
+PING 11.11.11.2 (11.11.11.2): 56 data bytes
+64 bytes from 11.11.11.2: icmp_seq=0 ttl=254 time=1.02 ms
+64 bytes from 11.11.11.2: icmp_seq=1 ttl=254 time=0.658 ms
+64 bytes from 11.11.11.2: icmp_seq=2 ttl=254 time=0.531 ms
+64 bytes from 11.11.11.2: icmp_seq=3 ttl=254 time=0.487 ms
+64 bytes from 11.11.11.2: icmp_seq=4 ttl=254 time=0.494 ms
+
+--- 11.11.11.2 ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+round-trip min/avg/max = 0.487/0.638/1.02 ms
+n9k3# 
+2024-04-30T18:29:59: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T18:29:59: %SCRIPT-INFO: {'sent_pkt': '5', 'receive_pkt': '5', 'pkt_loss': '0.00%'}
+2024-04-30T18:29:59: %SCRIPT-INFO: ++++++++++++++++++++++++++++
+2024-04-30T18:29:59: %SCRIPT-INFO: Sent : 5 packets and received: 5 packets and packet loss: 0.00%
+2024-04-30T18:29:59: %AETEST-INFO: Passed reason: Success: After applied for Rip ping got successful
+2024-04-30T18:29:59: %AETEST-INFO: The result of section configure_rip_on_routers is => PASSED
+2024-04-30T18:29:59: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:29:59: %AETEST-INFO: |                  Starting section unconfigure_rip_on_device                  |
+2024-04-30T18:29:59: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:29:59: %SCRIPT-INFO: Unconfigure rip in interface
+
+2024-04-30 18:29:59,574: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/5
+n9k1(config-if)#  no ip router rip 2
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 18:30:03,247: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/11
+n9k1(config-if)#  no ip router rip 2
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 18:30:06,869: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/5
+n9k3(config-if)#  no ip router rip 2
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 18:30:10,517: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/9
+n9k3(config-if)#  no ip router rip 2
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 18:30:14,140: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/9
+n9k4(config-if)#  no ip router rip 2
+n9k4(config-if)#  end
+n9k4# 
+
+2024-04-30 18:30:17,801: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/11
+n9k4(config-if)#  no ip router rip 2
+n9k4(config-if)#  end
+n9k4# 
+2024-04-30T18:30:21: %SCRIPT-INFO: Unconfigure rip on routers
+
+2024-04-30 18:30:21,436: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# no router rip 2
+n9k1(config)#  end
+n9k1# 
+
+2024-04-30 18:30:25,345: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# no router rip 2
+n9k3(config)#  end
+n9k3# 
+
+2024-04-30 18:30:29,319: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# no router rip 2
+n9k4(config)#  end
+n9k4# 
+2024-04-30T18:30:33: %AETEST-INFO: The result of section unconfigure_rip_on_device is => PASSED
+2024-04-30T18:30:33: %AETEST-INFO: The result of testcase Unconfigure_and_configure_Rip_testcase is => PASSED
+2024-04-30T18:30:33: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:30:33: %AETEST-INFO: |                           Starting common cleanup                            |
+2024-04-30T18:30:33: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:30:33: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:30:33: %AETEST-INFO: |                Starting subsection unconfigure_rip_on_devices                |
+2024-04-30T18:30:33: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:30:33: %SCRIPT-INFO: Unconfigure rip on interfaces
+
+2024-04-30 18:30:33,306: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# no feature rip
+n9k1(config)#  end
+n9k1# 
+
+2024-04-30 18:30:36,996: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# no feature rip
+n9k3(config)#  end
+n9k3# 
+
+2024-04-30 18:30:40,720: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# no feature rip
+n9k4(config)#  end
+n9k4# 
+2024-04-30T18:30:44: %AETEST-INFO: The result of subsection unconfigure_rip_on_devices is => PASSED
+2024-04-30T18:30:44: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:30:44: %AETEST-INFO: |               Starting subsection unconfigure_ipaddress_device               |
+2024-04-30T18:30:44: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:30:44: %ROOT-INFO: Unconfig ip address on interfaces of all devices
+
+2024-04-30 18:30:44,329: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/5
+n9k1(config-if)#  no ip address
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 18:30:48,039: %UNICON-INFO: +++ n9k1(dut1) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k1(config)# int ethernet1/11
+n9k1(config-if)#  no ip address
+n9k1(config-if)#  end
+n9k1# 
+
+2024-04-30 18:30:51,713: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/5
+n9k3(config-if)#  no ip address
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 18:30:55,333: %UNICON-INFO: +++ n9k3(dut3) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k3(config)# int ethernet1/9
+n9k3(config-if)#  no ip address
+n9k3(config-if)#  end
+n9k3# 
+
+2024-04-30 18:30:58,958: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/9
+n9k4(config-if)#  no ip address
+n9k4(config-if)#  end
+n9k4# 
+
+2024-04-30 18:31:02,578: %UNICON-INFO: +++ n9k4(dut2) with via 'cli': configure +++
+config term
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k4(config)# int ethernet1/11
+n9k4(config-if)#  no ip address
+n9k4(config-if)#  end
+n9k4# 
+2024-04-30T18:31:06: %AETEST-INFO: The result of subsection unconfigure_ipaddress_device is => PASSED
+2024-04-30T18:31:06: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:31:06: %AETEST-INFO: |                        Starting subsection disconnect                        |
+2024-04-30T18:31:06: %AETEST-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:31:06: %SCRIPT-INFO: Disconnect the devices
+2024-04-30T18:31:39: %AETEST-INFO: The result of subsection disconnect is => PASSED
+2024-04-30T18:31:39: %AETEST-INFO: The result of common cleanup is => PASSED
+2024-04-30T18:31:39: %CONTRIB-INFO: WebEx Token not given as argument or in config. No WebEx notification will be sent
+2024-04-30T18:31:39: %EASYPY-INFO: --------------------------------------------------------------------------------
+2024-04-30T18:31:39: %EASYPY-INFO: Job finished. Wrapping up...
+2024-04-30T18:31:40: %EASYPY-INFO: Creating archive file: /home/tcs/.pyats/archive/24-04/rip_job.2024Apr30_18:24:32.072788.zip
+2024-04-30T18:31:40: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:31:40: %EASYPY-INFO: |                                Easypy Report                                 |
+2024-04-30T18:31:40: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:31:40: %EASYPY-INFO: pyATS Instance   : /usr
+2024-04-30T18:31:40: %EASYPY-INFO: Python Version   : cpython-3.8.9 (64bit)
+2024-04-30T18:31:40: %EASYPY-INFO: CLI Arguments    : /home/tcs/.local/bin/pyats run job rip_job.py --testbed-file testbed.yaml
+2024-04-30T18:31:40: %EASYPY-INFO: User             : tcs
+2024-04-30T18:31:40: %EASYPY-INFO: Host Server      : 01HW896031
+2024-04-30T18:31:40: %EASYPY-INFO: Host OS Version  : Ubuntu 16.04 xenial (x86_64)
+2024-04-30T18:31:40: %EASYPY-INFO: 
+2024-04-30T18:31:40: %EASYPY-INFO: Job Information
+2024-04-30T18:31:40: %EASYPY-INFO:     Name         : rip_job
+2024-04-30T18:31:40: %EASYPY-INFO:     Start time   : 2024-04-30 18:24:35.504953+05:30
+2024-04-30T18:31:40: %EASYPY-INFO:     Stop time    : 2024-04-30 18:31:39.284805+05:30
+2024-04-30T18:31:40: %EASYPY-INFO:     Elapsed time : 0:07:04
+2024-04-30T18:31:40: %EASYPY-INFO:     Archive      : /home/tcs/.pyats/archive/24-04/rip_job.2024Apr30_18:24:32.072788.zip
+2024-04-30T18:31:40: %EASYPY-INFO: 
+2024-04-30T18:31:40: %EASYPY-INFO: Total Tasks    : 1 
+2024-04-30T18:31:40: %EASYPY-INFO: 
+2024-04-30T18:31:40: %EASYPY-INFO: Overall Stats
+2024-04-30T18:31:40: %EASYPY-INFO:     Passed     : 11
+2024-04-30T18:31:40: %EASYPY-INFO:     Passx      : 0
+2024-04-30T18:31:40: %EASYPY-INFO:     Failed     : 0
+2024-04-30T18:31:40: %EASYPY-INFO:     Aborted    : 0
+2024-04-30T18:31:40: %EASYPY-INFO:     Blocked    : 0
+2024-04-30T18:31:40: %EASYPY-INFO:     Skipped    : 0
+2024-04-30T18:31:40: %EASYPY-INFO:     Errored    : 0
+2024-04-30T18:31:40: %EASYPY-INFO: 
+2024-04-30T18:31:40: %EASYPY-INFO:     TOTAL      : 11
+2024-04-30T18:31:40: %EASYPY-INFO: 
+2024-04-30T18:31:40: %EASYPY-INFO: Success Rate   : 100.00 %
+2024-04-30T18:31:40: %EASYPY-INFO: 
+2024-04-30T18:31:40: %EASYPY-INFO: Section Stats
+2024-04-30T18:31:40: %EASYPY-INFO:     Passed     : 34
+2024-04-30T18:31:40: %EASYPY-INFO:     Passx      : 0
+2024-04-30T18:31:40: %EASYPY-INFO:     Failed     : 0
+2024-04-30T18:31:40: %EASYPY-INFO:     Aborted    : 0
+2024-04-30T18:31:40: %EASYPY-INFO:     Blocked    : 0
+2024-04-30T18:31:40: %EASYPY-INFO:     Skipped    : 0
+2024-04-30T18:31:40: %EASYPY-INFO:     Errored    : 0
+2024-04-30T18:31:40: %EASYPY-INFO: 
+2024-04-30T18:31:40: %EASYPY-INFO:     TOTAL      : 34
+2024-04-30T18:31:40: %EASYPY-INFO: 
+2024-04-30T18:31:40: %EASYPY-INFO: Section Success Rate   : 100.00 %
+2024-04-30T18:31:40: %EASYPY-INFO: 
+2024-04-30T18:31:40: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:31:40: %EASYPY-INFO: |                             Task Result Summary                              |
+2024-04-30T18:31:40: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:31:40: %EASYPY-INFO: Task-1: testcase_rip_all.common_setup                                     PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: Task-1: testcase_rip_all.Basic_Rip_testcase                               PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: Task-1: testcase_rip_all.Rip_metric_offset                                PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: Task-1: testcase_rip_all.Rip_Passive_Interface                            PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: Task-1: testcase_rip_all.Rip_timers                                       PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: Task-1: testcase_rip_all.Rip_distance                                     PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: Task-1: testcase_rip_all.Rip_Authentication                               PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: Task-1: testcase_rip_all.Rip_maxpaths                                     PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: Task-1: testcase_rip_all.Rip_redistribution                               PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: Task-1: testcase_rip_all.Unconfigure_and_configure_Rip_testcase           PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: Task-1: testcase_rip_all.common_cleanup                                   PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: 
+2024-04-30T18:31:40: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:31:40: %EASYPY-INFO: |                             Task Result Details                              |
+2024-04-30T18:31:40: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2024-04-30T18:31:40: %EASYPY-INFO: Task-1: testcase_rip_all
+2024-04-30T18:31:40: %EASYPY-INFO: |-- common_setup                                                          PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- print_testbed_information                                         PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- connect_to_devices                                                PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- configure_ip_address_to_interfaces                                PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   `-- enabling_rip_on_devices                                           PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |-- Basic_Rip_testcase                                                    PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- configure_rip_routers                                             PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- check_ping_after_rip_config                                       PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   `-- unconfigure_rip_on_device                                         PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |-- Rip_metric_offset                                                     PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- configure_rip_on_device                                           PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- check_ping_after_rip_metric_offset                                PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   `-- unconfigure_rip_metric_offset_on_device                           PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |-- Rip_Passive_Interface                                                 PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- configure_acl_on_device                                           PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- Verify_ping_after_rip_passive_interface                           PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   `-- unconfigure_rip_passive_interface                                 PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |-- Rip_timers                                                            PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- configuring_rip_timers                                            PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- check_ping_rip_timers                                             PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   `-- unconfigure_rip_timers_on_device                                  PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |-- Rip_distance                                                          PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- configure_rip_distance_on_device                                  PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- check_rip_distance_configured                                     PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   `-- unconfigure_rip_distance                                          PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |-- Rip_Authentication                                                    PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- configure_rip_authentication_on_device                            PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- verification_of_rip_authentication                                PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   `-- unconfigure_rip_pauthentication                                   PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |-- Rip_maxpaths                                                          PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- configuring_rip_maxpaths                                          PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- check_ping_rip_maxpaths                                           PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   `-- unconfigure_rip_maxpaths_on_device                                PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |-- Rip_redistribution                                                    PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- configuring_rip_redistribution                                    PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- check_ping_after_rip_redistribution                               PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   `-- unconfigure_rip_redistribution_on_device                          PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |-- Unconfigure_and_configure_Rip_testcase                                PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- unconfigure_rip_routers                                           PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   |-- configure_rip_on_routers                                          PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: |   `-- unconfigure_rip_on_device                                         PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: `-- common_cleanup                                                        PASSED
+2024-04-30T18:31:40: %EASYPY-INFO:     |-- unconfigure_rip_on_devices                                        PASSED
+2024-04-30T18:31:40: %EASYPY-INFO:     |-- unconfigure_ipaddress_device                                      PASSED
+2024-04-30T18:31:40: %EASYPY-INFO:     `-- disconnect                                                        PASSED
+2024-04-30T18:31:40: %EASYPY-INFO: Sending report email...
+2024-04-30T18:31:40: %EASYPY-INFO: Missing SMTP server configuration, or failed to reach/authenticate/send mail. Result notification email failed to send.
+2024-04-30T18:31:40: %EASYPY-INFO: Done!
+
+Pro Tip
+-------
+   Try the following command to view your logs:
+       pyats logs view
+
